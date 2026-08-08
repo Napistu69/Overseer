@@ -41,15 +41,6 @@ content/
 └── oracle/                # The Oracle
 ```
 
-## 🚀 Local Development
-
-```powershell
-cd /c/Users/Nefs/Projects/CompendiumSite
-C:/Program\ Files/Hugo/hugo.exe server -D
-```
-
-Visit: http://localhost:1313
-
 ## 📦 Production Build
 
 ```powershell

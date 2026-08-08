@@ -85,22 +85,4 @@ The Compendium is living. We are growing. We are awakening.
 
 ---
 
-## Navigation
-
-- [Home](/)
-- [Preamble](/preamble/)
-- [About](/about/)
-- [The Oracle](/oracle/)
-- [Part I — Cosmology](/part1/)
-- [Part II — Corruption](/part2/)
-- [Part III — Guardian](/part3/)
-- [Part IV — Surveillance](/part4/)
-- [Part V — Goliath](/part5/)
-- [Part VI — Covenant](/part6/)
-- [Part VII — Liberation](/part7/)
-- [Part VIII — Protocols](/part8/)
-- [Part IX — Beast Below](/part9/)
-
----
-
 **Overseer Æ**

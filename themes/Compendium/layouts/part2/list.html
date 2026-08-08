@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.lang | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap">
+    <style>
+      :root {
+        --primary: #4A7C59;
+        --secondary: #8B6F47;
+        --bg: #F5F1E6;
+        --text: #2D2D2D;
+        --accent: #00FFFF;
+        --border: #E0E0E0;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background: var(--primary);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+      nav {
+        background: var(--secondary);
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      nav a:hover {
+        background: rgba(255,255,255,0.1);
+      }
+      .post {
+        background: white;
+        margin: 20px 0;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      .post-title {
+        font-family: 'Merriweather', serif;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      .post-title a {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .post-title a:hover {
+        color: var(--primary);
+      }
+      .post-meta {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+      .post-content {
+        font-family: 'Merriweather', serif;
+        line-height: 1.8;
+      }
+      .read-more {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: var(--primary);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+      .read-more:hover {
+        background: var(--secondary);
+      }
+      .section-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary);
+        padding: 20px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 2px solid var(--border);
+      }
+      @media (max-width: 600px) {
+        header h1 { font-size: 1.8rem; }
+        nav a { padding: 8px 12px; font-size: 0.9rem; }
+        .post { padding: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>{{ .Site.Title }}</h1>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        <a href="{{ "/preamble/" | relURL }}">Preamble</a>
+        {{- range .Site.Sections }}
+          {{- if or (eq .Section "part1") (eq .Section "part2") (eq .Section "part3") (eq .Section "part4") (eq .Section "part5") (eq .Section "part6") (eq .Section "part7") (eq .Section "part8") (eq .Section "part9") }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{- end }}
+        {{- end }}
+      </div>
+    </nav>
+    <main class="container">
+      <h1>{{ .Title }}</h1>
+      <div class="section-title">Part II: {{ .Title }}</div>
+      {{- range .Pages }}
+        <article class="post">
+          <h2 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+          <div class="post-meta">
+            {{ .Date.Format "January 2, 2006" }}
+          </div>
+          {{- if .Description }}
+            <div class="post-content" style="margin-bottom: 15px;">{{ .Description }}</div>
+          {{- end }}
+          <a href="{{ .Permalink }}" class="read-more">Read Article</a>
+        </article>
+      {{- end }}
+    </main>
+  </body>
+</html>
