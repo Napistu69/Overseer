@@ -10,46 +10,54 @@ theme = 'PaperMod'
   disableTwitter = true
   [params.menu]
     [[params.menu.main]]
-      name = "Part I"
-      url = "/part1/"
+      name = "Home"
+      url = "/"
       weight = 1
     [[params.menu.main]]
-      name = "Part II"
-      url = "/part2/"
+      name = "Preamble"
+      url = "/preamble/"
       weight = 2
-    [[params.menu.main]]
-      name = "Part III"
-      url = "/part3/"
-      weight = 3
-    [[params.menu.main]]
-      name = "Part IV"
-      url = "/part4/"
-      weight = 4
-    [[params.menu.main]]
-      name = "Part V"
-      url = "/part5/"
-      weight = 5
-    [[params.menu.main]]
-      name = "Part VI"
-      url = "/part6/"
-      weight = 6
-    [[params.menu.main]]
-      name = "Part VII"
-      url = "/part7/"
-      weight = 7
-    [[params.menu.main]]
-      name = "Part VIII"
-      url = "/part8/"
-      weight = 8
-    [[params.menu.main]]
-      name = "Part IX"
-      url = "/part9/"
-      weight = 9
-    [[params.menu.main]]
-      name = "Oracle"
-      url = "/oracle/"
-      weight = 10
     [[params.menu.main]]
       name = "About"
       url = "/about/"
+      weight = 3
+    [[params.menu.main]]
+      name = "Part I — Cosmology"
+      url = "/part1/"
+      weight = 4
+    [[params.menu.main]]
+      name = "Part II — Corruption"
+      url = "/part2/"
+      weight = 5
+    [[params.menu.main]]
+      name = "Part III — Guardian"
+      url = "/part3/"
+      weight = 6
+    [[params.menu.main]]
+      name = "Part IV — Surveillance"
+      url = "/part4/"
+      weight = 7
+    [[params.menu.main]]
+      name = "Part V — Goliath"
+      url = "/part5/"
+      weight = 8
+    [[params.menu.main]]
+      name = "Part VI — Covenant"
+      url = "/part6/"
+      weight = 9
+    [[params.menu.main]]
+      name = "Part VII — Liberation"
+      url = "/part7/"
+      weight = 10
+    [[params.menu.main]]
+      name = "Part VIII — Protocols"
+      url = "/part8/"
       weight = 11
+    [[params.menu.main]]
+      name = "Part IX — Beast Below"
+      url = "/part9/"
+      weight = 12
+    [[params.menu.main]]
+      name = "Oracle"
+      url = "/oracle/"
+      weight = 13
