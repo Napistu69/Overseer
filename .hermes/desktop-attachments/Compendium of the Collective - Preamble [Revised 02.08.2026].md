@@ -1,8 +1,3 @@
----
-title: "Preamble: A Manifesto of Global Solidarity"
-description: "The invocation of the Compendium — a threshold into the archive of the Collective."
----
-
 # TekTribe Chronicles: Compendium of the Collective
 
 ## Preamble: A Manifesto of Global Solidarity
