@@ -2,13 +2,11 @@
 
 **The Compendium of the Collective**
 
-A static site built with Hugo Extended, deployed via Netlify, archived on ARweave.
+A static site built with Hugo Extended.
 
 ## 📍 Current Status
 
 - **Domain:** `napisnest.com` (Netlify hosting)
-- **IPFS:** Available via Fleek deployment
-- **ARweave:** Pinned archive
 - **Future:** `overseer.ae` (pending domain acquisition)
 
 ## 🏗️ Tech Stack
@@ -16,11 +14,9 @@ A static site built with Hugo Extended, deployed via Netlify, archived on ARweav
 | Component | Technology |
 |-----------|------------|
 | Static Generator | Hugo Extended v0.164.0 |
-| Theme | PaperMod |
-| Hosting | Netlify (Phase 1), Fleek/IPFS (Phase 2) |
-| Archive | ARweave pin |
-| CSS | Custom tekttribe.css |
-| Fonts | Local assets only |
+| Theme | Compendium (Custom) |
+| Hosting | Netlify |
+| CSS | Custom (style.css) |
 
 ## 📁 Content Structure
 
@@ -28,7 +24,7 @@ A static site built with Hugo Extended, deployed via Netlify, archived on ARweav
 content/
 ├── _index.md              # Home page
 ├── about.md               # About the Compendium
-├── preamble.md            # Preamble page
+├── preamble/              # Preamble section
 ├── part1/                 # Cosmology of the Continuum
 ├── part2/                 # Architecture of Corruption
 ├── part3/                 # The Guardian, Avatar & Allies
@@ -41,38 +37,27 @@ content/
 └── oracle/                # The Oracle
 ```
 
+## 🚀 Local Development
+
+```bash
+hugo server
+```
+
+Visit: http://localhost:1313
+
 ## 📦 Production Build
 
-```powershell
-cd /c/Users/Nefs/Projects/CompendiumSite
-C:/Program\ Files/Hugo/hugo.exe --gc --minify
+```bash
+hugo --gc --minify
 ```
 
 Output located in `/public` folder.
-
-## 🌐 Deployment Pipeline
-
-1. **Phase 1:** Netlify deploy (current)
-2. **Phase 2:** Fleek/IPFS deployment
-3. **Phase 3:** ARweave pinning
-4. **Phase 4:** Domain migration (future)
-
-## 🎨 Color Doctrine
-
-The site follows the TekTribe color doctrine:
-
-- **Natural (+):** Earthy greens, warm browns, cream
-- **Overseer Tek (Neutral):** Neon cyan, aurora gradients, gold accents
-- **Dark Mode Default:** Background #0a0e0f, text #e8e8e8
 
 ## 🔐 Sovereignty Principles
 
 - ✅ No third-party analytics
 - ✅ No external scripts
-- ✅ All assets served locally
 - ✅ Static generation (fast, reliable)
-- ✅ Decentralized hosting
-- ✅ Local-first architecture
 
 ## 📜 Protocol
 
