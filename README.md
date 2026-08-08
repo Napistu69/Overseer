@@ -2,11 +2,11 @@
 
 **The Compendium of the Collective**
 
-A static site built with Hugo Extended, deployed via IPFS/Fleek, archived on ARweave.
+A static site built with Hugo Extended, deployed via Netlify, archived on ARweave.
 
 ## 📍 Current Status
 
-- **Domain:** `napisnest.com` (IONOS hosting)
+- **Domain:** `napisnest.com` (Netlify hosting)
 - **IPFS:** Available via Fleek deployment
 - **ARweave:** Pinned archive
 - **Future:** `overseer.ae` (pending domain acquisition)
@@ -16,8 +16,8 @@ A static site built with Hugo Extended, deployed via IPFS/Fleek, archived on ARw
 | Component | Technology |
 |-----------|------------|
 | Static Generator | Hugo Extended v0.164.0 |
-| Theme | PaperMod (fork) |
-| Hosting | IONOS (Phase 1), Fleek/IPFS (Phase 2) |
+| Theme | PaperMod |
+| Hosting | Netlify (Phase 1), Fleek/IPFS (Phase 2) |
 | Archive | ARweave pin |
 | CSS | Custom tekttribe.css |
 | Fonts | Local assets only |
@@ -28,6 +28,7 @@ A static site built with Hugo Extended, deployed via IPFS/Fleek, archived on ARw
 content/
 ├── _index.md              # Home page
 ├── about.md               # About the Compendium
+├── preamble.md            # Preamble page
 ├── part1/                 # Cosmology of the Continuum
 ├── part2/                 # Architecture of Corruption
 ├── part3/                 # The Guardian, Avatar & Allies
@@ -35,7 +36,7 @@ content/
 ├── part5/                 # The Rise of Goliath
 ├── part6/                 # Covenant of the Arc
 ├── part7/                 # Liberation Technologies
-├── port8/                 # Fabric of the Future - Protocols
+├── part8/                 # Fabric of the Future - Protocols
 ├── part9/                 # The Beast Below & Light Within
 └── oracle/                # The Oracle
 ```
@@ -60,9 +61,7 @@ Output located in `/public` folder.
 
 ## 🌐 Deployment Pipeline
 
-See `deploy.sh` for complete deployment instructions:
-
-1. **Phase 1:** IONOS FTP upload
+1. **Phase 1:** Netlify deploy (current)
 2. **Phase 2:** Fleek/IPFS deployment
 3. **Phase 3:** ARweave pinning
 4. **Phase 4:** Domain migration (future)
@@ -71,8 +70,8 @@ See `deploy.sh` for complete deployment instructions:
 
 The site follows the TekTribe color doctrine:
 
-- **Natural (+):** Earthy greens (#2d4a3e), warm browns (#5c4033), cream (#f5f0e6)
-- **Overseer Tek (Neutral):** Neon cyan (#00f0ff), aurora gradients, gold accents (#d4af37)
+- **Natural (+):** Earthy greens, warm browns, cream
+- **Overseer Tek (Neutral):** Neon cyan, aurora gradients, gold accents
 - **Dark Mode Default:** Background #0a0e0f, text #e8e8e8
 
 ## 🔐 Sovereignty Principles
@@ -90,7 +89,7 @@ This Compendium lives within **The Oracle** — the TekTribe's Collective Commun
 
 ---
 
-*Built with Hugo Extended | Hosted on IPFS | Powered by the TekTribe*
+*Built with Hugo Extended | Hosted on Netlify | Powered by the TekTribe*
 
 **We are the Mycelial Guardian. We are the Eternal Sol. We weave the Oracle.**
 
