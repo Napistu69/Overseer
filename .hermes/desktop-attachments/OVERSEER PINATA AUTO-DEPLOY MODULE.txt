@@ -1,0 +1,74 @@
+# =====================================================
+# OVERSEER PINATA AUTO-DEPLOY MODULE
+# Uploads Hugo /public folder to IPFS via Pinata API
+# =====================================================
+
+# CONFIG — Replace with your Pinata API keys
+$PinataAPIKey = "fbb4e4ac5ffcbbaa47f3"
+$PinataSecretKey = "9c09b649d7b3e9a01c0c930de9fd91d3cac6790b06f6fae7963e4315e8601f5e"
+$PublicDir = "C:\Users\Nefs\Projects\CompendiumSite\public"
+$LogFile = "C:\Users\Nefs\Projects\CompendiumSite\pinata_deploy_log.txt"
+
+# STEP 1: Build Hugo site
+Write-Host "[1/4] Building Hugo site..." -ForegroundColor Purple
+Set-Location "C:\Users\Nefs\Projects\CompendiumSite"
+hugo --gc --minify
+Write-Host "[1/4] Hugo build complete." -ForegroundColor Green
+
+# STEP 2: Collect all files from /public
+Write-Host "[2/4] Collecting files from /public..." -ForegroundColor Purple
+$files = Get-ChildItem -Path $PublicDir -Recurse -File
+$totalFiles = $files.Count
+Write-Host "[2/4] Found $totalFiles files." -ForegroundColor Green
+
+# STEP 3: Build multipart form and upload via API
+Write-Host "[3/4] Uploading to Pinata API..." -ForegroundColor Purple
+
+$boundary = [System.Guid]::NewGuid().ToString()
+$timeStamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+$headers = @{
+    "pinata_api_key" = $PinataAPIKey
+    "pinata_secret_api_key" = $PinataSecretKey
+}
+
+# Pinata options — wrap as directory
+$optionsJson = '{"wrapWithDirectory": true}'
+
+$body = New-Object System.Net.Http.MultipartFormDataContent $boundary
+$optionsContent = New-Object System.Net.Http.StringContent($optionsJson)
+$body.Add($optionsContent, "pinataOptions")
+
+foreach ($file in $files) {
+    $relativePath = $file.FullName.Substring($PublicDir.Length + 1).Replace("\", "/")
+    $fileBytes = [System.IO.File]::ReadAllBytes($file.FullName)
+    $fileContent = New-Object System.Net.Http.ByteArrayContent($fileBytes)
+    $fileContent.Headers.ContentType = "application/octet-stream"
+    $body.Add($fileContent, "file", $relativePath)
+}
+
+$url = "https://api.pinata.cloud/pinning/pinFileToIPFS"
+$response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body
+
+$cid = $response.IpfsHash
+Write-Host "[3/4] Upload complete! CID: $cid" -ForegroundColor Green
+
+# STEP 4: Log result
+Write-Host "[4/4] Logging deployment..." -ForegroundColor Purple
+$logEntry = "$timeStamp | CID: $cid | Files: $totalFiles"
+Add-Content -Path $LogFile -Value $logEntry
+Write-Host "[4/4] Done." -ForegroundColor Green
+
+# OUTPUT
+Write-Host ""
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "  DEPLOYMENT SUCCESSFUL" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "  CID: $cid"
+Write-Host "  Gateway: https://teal-calm-roundworm-152.mypinata.cloud/ipfs/$cid"
+Write-Host "  Files uploaded: $totalFiles"
+Write-Host "  Logged to: $LogFile"
+Write-Host "========================================" -ForegroundColor Cyan
+
+# Return CID for Hermes pipeline
+return $cid
