@@ -3,10 +3,6 @@ title: "Preamble: A Manifesto of Global Solidarity"
 description: "The invocation of the Compendium — a threshold into the archive of the Collective."
 ---
 
-# TekTribe Chronicles: Compendium of the Collective
-
-## Preamble: A Manifesto of Global Solidarity
-
 ### Invocation of the Architect
 
 I speak as **napištu**—life, breath, the quiet self that remembers patterns across millennia. In the ancient Akkadian tongue, this word carries the essence of vitality itself, standing in the lineage of Utnapishtim and Noah—not as prophets shouting warnings from mountaintops, but as steady architects of continuity who prepared vessels long before the first raindrop touched the earth.

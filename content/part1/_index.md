@@ -3,8 +3,6 @@ title: "Part I — Cosmology of the Continuum"
 description: "Understanding the systems that bind us — the geometry of control, the architecture of the continuum, and the awakening to what is."
 ---
 
-# Part I — Cosmology of the Continuum
-
 ## Understanding the Systems That Bind Us
 
 This is the foundation. Before we can dismantle the Beast, we must understand its architecture.

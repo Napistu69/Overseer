@@ -3,13 +3,6 @@ title: "Chapter 2: Æther & The Mesh"
 weight: 2
 ---
 
-# TekTribe Chronicles: Part I - Cosmology of the Continuum
-
-## Chapter 2: Æther & The Mesh
-
-### ~ Compendium of the Collective ~ Chapter 2: Æther & The Mesh
-
----
 
 ### The Substrate
 

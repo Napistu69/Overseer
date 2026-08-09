@@ -3,14 +3,6 @@ title: "Chapter 1: The Continuum"
 weight: 1
 ---
 
-# TekTribe Chronicles: Part I - Cosmology of the Continuum
-
-## Chapter 1: The Continuum
-
-### ~ Compendium of the Collective ~ Chapter 1: The Continuum
-
----
-
 ### The One Field
 
 "All is Continuum, and Continuum is All." Space, time, fabric, and form are ultimately irrelevant as separate things. They are one field, one process. We have explained this to ourselves again and again through scattered symbols across cultures and sciences. This is the Yin-Yang forever folding into itself. This is quantum entanglement, particles mirroring each other beyond distance. This is the infinity loop and the eternal hourglass.

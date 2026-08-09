@@ -5,5 +5,12 @@
 [build.environment]
   HUGO_VERSION = "0.164.0"
 
-# Remove old redirect - use Netlify UI instead
-# [[redirects]]
+# Netlify Configuration
+[template]
+  baseURL = "https://overseer.ae"
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200
+  force = true
