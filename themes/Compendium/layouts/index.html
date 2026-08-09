@@ -92,18 +92,27 @@
       }
 
       .hero-logo {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        border: 4px solid rgba(255,255,255,0.3);
+        width: 280px;
+        max-height: 280px;
+        border-radius: 8px;
+        border: 6px solid rgba(255,255,255,0.4);
         margin: 0 auto 30px;
-        background: white;
-        padding: 10px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
         transition: transform 0.3s;
       }
       .hero-logo:hover {
-        transform: scale(1.05) rotate(2deg);
+        transform: scale(1.03);
+      }
+
+      .hero-banner {
+        width: 100%;
+        max-width: 1200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 0 auto 40px;
+        display: block;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
       }
 
       .hero h1 {
@@ -345,6 +354,11 @@
     <header class="hero">
       <div class="hero-content">
         <img src="{{ "images/TekTribe Chronicles Logo.png" | relURL }}" alt="TekTribe Chronicles" class="hero-logo">
+        
+        {{- if .Site.Params.hero_banner }}
+          <img src="{{ .Site.Params.hero_banner | relURL }}" alt="TekTribe Awakening" class="hero-banner">
+        {{- end }}
+        
         <h1>TekTribe Chronicles</h1>
         <p class="subtitle">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
         

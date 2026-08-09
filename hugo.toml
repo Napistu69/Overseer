@@ -4,7 +4,8 @@ title = 'TekTribe Chronicles'
 theme = 'Compendium'
 
 [params]
-  author = "Overseer AE"
+  author = "Overseer Æ"
   description = "Compendium of the Collective"
   disableRSS = true
   disableTwitter = true
+  hero_banner = "images/tektribe-awakening-banner.jpg"
