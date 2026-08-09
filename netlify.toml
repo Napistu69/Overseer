@@ -5,8 +5,5 @@
 [build.environment]
   HUGO_VERSION = "0.164.0"
 
-[[redirects]]
-  from = "https://napisnest.com/*"
-  to = "https://roaring-kitsune-13ad5f.netlify.app/:splat"
-  status = 301
-  force = false
+# Remove old redirect - use Netlify UI instead
+# [[redirects]]
