@@ -5,6 +5,10 @@
 [build.environment]
   HUGO_VERSION = "0.164.0"
 
+# Disable image optimization to save AI credits
+[build.optimization]
+  images = false
+
 [template]
   baseURL = "https://overseer.ae"
 
