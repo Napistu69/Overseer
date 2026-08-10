@@ -1,4 +1,4 @@
-baseURL = 'https://overseer.github.io/Overseer'
+baseURL = 'https://overseer.github.io'
 languageCode = 'en-us'
 title = 'TekTribe Chronicles'
 theme = 'Compendium'
