@@ -1,6 +1,5 @@
 # Generated files
-public/
-deployment/
+# deployment/ (optional)
 
 # Hugo
 .cache/
