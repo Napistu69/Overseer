@@ -4,14 +4,14 @@
     <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #4a7c59;">
       {{ .Title }}
     </h1>
+    {{ if .Description }}
     <p style="font-size: 1.25rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
       {{ .Description }}
     </p>
-    {{ with .Content }}
-    {{ . | markdownify }}
     {{ end }}
+    {{ .Content | markdownify }}
     <div style="margin-top: 3rem;">
-      <a href="{{ .Site.Params.contribute_url }}" 
+      <a href="{{ "/oracle/contribute" | relURL }}" 
          class="btn btn-primary" 
          style="display: inline-block; background: #4a7c59; color: white; padding: 0.75rem 2rem; text-decoration: none; border-radius: 6px;">
         Contribute to the Oracle

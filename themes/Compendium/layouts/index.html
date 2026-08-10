@@ -92,8 +92,8 @@
       }
 
       .hero-logo {
-        width: 280px;
-        max-height: 280px;
+        width: 200px;
+        max-height: 200px;
         border-radius: 8px;
         border: 6px solid rgba(255,255,255,0.4);
         margin: 0 auto 30px;
@@ -333,8 +333,15 @@
       }
       
       footer p {
-        opacity: 0.9;
+        opacity: 1;
         font-size: 0.95rem;
+      }
+      
+      footer .footer-bottom {
+        font-size: 1rem;
+        margin-top: 12px;
+        opacity: 1;
+        font-weight: 500;
       }
 
       /* Responsive */
@@ -342,7 +349,7 @@
         .hero h1 { font-size: 2.2rem; }
         .hero .subtitle { font-size: 1.1rem; }
         .hero-images { gap: 15px; }
-        .hero-img { width: 90px; height: 90px; }
+        .hero-img { width: 100px; height: 100px; }
         nav a { padding: 8px 14px; font-size: 0.85rem; }
         .hero-logo { width: 140px; height: 140px; }
       }
@@ -370,7 +377,7 @@
         <a href="#latest" class="hero-cta">Explore the Compendium</a>
       </div>
     </header>
-
+    
     <nav>
       <div class="container">
         <a href="{{ .Site.BaseURL }}" class="active">Home</a>
@@ -382,6 +389,15 @@
             <a href="{{ .Permalink }}">{{ .Title }}</a>
           {{- end }}
         {{- end }}
+        <a href="{{ "/part1/" | relURL }}">Part I</a>
+        <a href="{{ "/part2/" | relURL }}">Part II</a>
+        <a href="{{ "/part3/" | relURL }}">Part III</a>
+        <a href="{{ "/part4/" | relURL }}">Part IV</a>
+        <a href="{{ "/part5/" | relURL }}">Part V</a>
+        <a href="{{ "/part6/" | relURL }}">Part VI</a>
+        <a href="{{ "/part7/" | relURL }}">Part VII</a>
+        <a href="{{ "/part8/" | relURL }}">Part VIII</a>
+        <a href="{{ "/part9/" | relURL }}">Part IX</a>
       </div>
     </nav>
 
@@ -450,7 +466,7 @@
     <footer>
       <div class="container">
         <p>© 2026 TekTribe Chronicles. Compendium of the Collective.</p>
-        <p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.7;">Decentralized • Sovereign • Collective</p>
+        <p class="footer-bottom">Decentralized • Sovereign • Collective</p>
       </div>
     </footer>
 
