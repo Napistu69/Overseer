@@ -1,0 +1,26 @@
+# Generated files
+public/
+deployment/
+
+# Hugo
+.cache/
+hugo_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files (cleanup scripts)
+Temp/
+*.sh
+*.bat
+.env
+
+# Guide files (optional cleanup)
+# *.md (except content/*.md)
