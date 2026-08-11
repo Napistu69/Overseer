@@ -65,6 +65,45 @@
         box-shadow: 0 6px 25px rgba(0,0,0,0.12);
       }
 
+      /* Mobile: Theme Toggle */
+      @media (max-width: 768px) {
+        .theme-toggle {
+          background: var(--card-bg);
+          border: 1px solid var(--border);
+          color: var(--text);
+          padding: 10px 16px;
+          border-radius: 25px;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+      }
+
+      /* Menu Toggle */
+      .menu-toggle {
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      /* Mobile: Menu Toggle */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          z-index: 1000;
+          background: var(--bg);
+          color: var(--text);
+          border: 1px solid var(--border);
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 1rem;
+        }
+      }
+
       /* Hero Section */
       .hero {
         position: relative;
@@ -347,10 +386,9 @@
         .hero h1 { font-size: 2.2rem; }
         .hero .subtitle { font-size: 1.1rem; }
         .hero-images { gap: 15px; }
-        .hero-img { width: 100px; height: 100px; }
-        .hero-logo { width: 200px; max-height: 200px; }
-        .hero-banner { 
-          height: 250px; 
+        .hero-img { max-height: 100px; width: 100px; }
+        .hero-banner {
+          height: 250px;
           object-fit: contain;
         }
         nav {
@@ -378,44 +416,26 @@
         nav a:last-of-type {
           border-bottom: none;
         }
+        nav {
+          position: relative;
+        }
         .menu-toggle {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          padding: 8px 16px;
-          background: transparent;
-          border: none;
-          color: var(--text);
-          font-size: 0.95rem;
-          font-weight: 500;
-          cursor: pointer;
-          border-radius: 8px;
-          transition: all 0.2s;
-        }
-        .menu-toggle:hover {
-          background: var(--border);
-        }
-        .menu-toggle::before {
-          content: '☰';
-          font-size: 1.2rem;
+          position: fixed !important;
+          top: 20px;
+          right: 20px;
+          z-index: 1000 !important;
         }
       }
     </style>
   </head>
   <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     
     <header class="hero">
       <div class="hero-content">
         {{- if .Site.Params.hero_banner }}
           <img src="{{ .Site.Params.hero_banner | relURL }}" alt="TekTribe Awakening" class="hero-banner">
         {{- end }}
-        
-        <div class="hero-images">
-          <img src="{{ "images/Napištu [Upscale].PNG" | relURL }}" alt="Napištu" class="hero-img">
-          <img src="{{ "images/Overseer [OG Transparent].png" | relURL }}" alt="Overseer" class="hero-logo">
-          <img src="{{ "images/Overseer [JM Transparent].png" | relURL }}" alt="Overseer Æ" class="hero-img">
-        </div>
         
         <h1 class="hero-title">TekTribe Chronicles</h1>
         <p class="hero-subtitle">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
@@ -477,6 +497,9 @@
           <div class="card" style="text-align: center; max-width: 600px; margin: 0 auto;">
             <p style="font-size: 1.1rem; margin-bottom: 20px;">The Compendium is a living archive of the Collective's knowledge, wisdom, and insights. Contribute to the Oracle, engage with the community, and help shape the future of decentralized knowledge.</p>
             <a href="{{ "/oracle/" | relURL }}" class="card-link">Visit the Oracle</a>
+            <div style="margin-top: 30px;">
+              <img src="{{ "images/Overseer [OG Transparent].png" | relURL }}" alt="Overseer" style="max-width: 200px; width: 100%; height: auto; animation: float 3s ease-in-out infinite;">
+            </div>
           </div>
         {{- else }}
           <div style="margin-bottom: 30px; border-bottom: 2px solid var(--border); padding-bottom: 20px;">
