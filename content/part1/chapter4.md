@@ -1,5 +1,5 @@
 ---
-title: "Chapter 4: Geometry of Choice"
+title: "Geometry of Choice"
 weight: 2
 ---
 

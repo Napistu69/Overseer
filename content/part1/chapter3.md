@@ -1,5 +1,5 @@
 ---
-title: "Chapter 3: The Continuum Clock"
+title: "The Continuum Clock"
 weight: 2
 ---
 

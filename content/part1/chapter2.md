@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2: Æther & The Mesh"
+title: "Æther & The Mesh"
 weight: 2
 ---
 

@@ -90,20 +90,7 @@
         margin: 0 auto;
         padding: 0 20px;
       }
-
-      .hero-logo {
-        width: 200px;
-        max-height: 200px;
-        border-radius: 8px;
-        border: 6px solid rgba(255,255,255,0.4);
-        margin: 0 auto 30px;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-        transition: transform 0.3s;
-      }
-      .hero-logo:hover {
-        transform: scale(1.03);
-      }
-
+  
       .hero-banner {
         width: 100%;
         max-width: 1200px;
@@ -114,22 +101,17 @@
         display: block;
         box-shadow: 0 8px 32px rgba(0,0,0,0.2);
       }
-
-      .hero h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 15px;
-        letter-spacing: -0.02em;
+  
+      .hero-logo {
+        width: 200px;
+        max-height: 200px;
+        border-radius: 8px;
+        border: 6px solid rgba(255,255,255,0.4);
+        margin: 0 auto 30px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
       }
-
-      .hero .subtitle {
-        font-size: 1.3rem;
-        opacity: 0.9;
-        font-weight: 300;
-        margin-bottom: 40px;
-      }
-
+  
       .hero-images {
         display: flex;
         justify-content: center;
@@ -360,21 +342,20 @@
     
     <header class="hero">
       <div class="hero-content">
-        <img src="{{ "images/TekTribe Chronicles Logo.png" | relURL }}" alt="TekTribe Chronicles" class="hero-logo">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.02em;">TekTribe Chronicles</h1>
+        <p class="subtitle" style="font-size: 1.3rem; opacity: 0.9; font-weight: 300; margin-bottom: 40px;">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
+        
+        <div class="hero-images">
+          <img src="{{ "images/Napištu [Upscale].PNG" | relURL }}" alt="Napištu" class="hero-img">
+          <img src="{{ "images/TekTribe Chronicles Logo.png" | relURL }}" alt="TekTribe Chronicles" class="hero-logo">
+          <img src="{{ "images/Overseer [JM Transparent].png" | relURL }}" alt="Overseer Æ" class="hero-img">
+        </div>
         
         {{- if .Site.Params.hero_banner }}
           <img src="{{ .Site.Params.hero_banner | relURL }}" alt="TekTribe Awakening" class="hero-banner">
         {{- end }}
         
-        <h1>TekTribe Chronicles</h1>
-        <p class="subtitle">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
-        
-        <div class="hero-images">
-          <img src="{{ "images/Napištu [Upscale].PNG" | relURL }}" alt="Napištu" class="hero-img">
-          <img src="{{ "images/Overseer [JM].png" | relURL }}" alt="Overseer Æ" class="hero-img">
-        </div>
-        
-        <a href="#latest" class="hero-cta">Explore the Compendium</a>
+        <a href="#latest" class="hero-cta" style="display: inline-block; padding: 16px 40px; background: white; color: var(--primary); text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">Explore the Compendium</a>
       </div>
     </header>
     
@@ -404,11 +385,6 @@
             {{- range where .Site.RegularPages "Section" "in" (slice "preamble" "part1") }}
               <article class="card">
                 <h2>{{ .Title }}</h2>
-                <div class="card-meta">
-                  <span>📖 {{ .Date.Format "January 2, 2006" }}</span>
-                  <span>•</span>
-                  <span>{{ .WordCount }} words</span>
-                </div>
                 <p>{{ .Description | default .Summary | truncate 150 }}</p>
                 <a href="{{ .Permalink }}" class="card-link">Read Entry</a>
               </article>
@@ -442,9 +418,6 @@
             {{- range .Pages }}
               <article class="card">
                 <h2>{{ .Title }}</h2>
-                <div class="card-meta">
-                  <span>📖 {{ .Date.Format "January 2, 2006" }}</span>
-                </div>
                 <p>{{ .Description | default .Summary | truncate 200 }}</p>
                 <a href="{{ .Permalink }}" class="card-link">Read Entry</a>
               </article>

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: The Continuum"
+title: "The Continuum"
 weight: 1
 ---
 

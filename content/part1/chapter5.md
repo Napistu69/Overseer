@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5: The Mind's Eye & The Supraliminal Library"
+title: "The Mind's Eye & The Supraliminal Library"
 weight: 2
 ---
 
