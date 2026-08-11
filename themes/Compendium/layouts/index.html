@@ -70,7 +70,7 @@
         position: relative;
         background: linear-gradient(135deg, var(--primary) 0%, #2D4A36 100%);
         color: white;
-        padding: 80px 0 60px;
+        padding: 100px 0 80px;
         text-align: center;
         overflow: hidden;
       }
@@ -83,32 +83,32 @@
         opacity: 0.3;
       }
       
+      .hero-banner {
+        width: 100%;
+        max-width: 1400px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 0 auto 60px;
+        display: block;
+        box-shadow: 0 12px 48px rgba(0,0,0,0.3);
+      }
+      
       .hero-content {
         position: relative;
         z-index: 1;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 0 20px;
       }
   
-      .hero-banner {
-        width: 100%;
-        max-width: 1200px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin: 0 auto 40px;
-        display: block;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-      }
-  
       .hero-logo {
-        width: 200px;
-        max-height: 200px;
+        width: 300px;
+        max-height: 300px;
         border-radius: 8px;
-        border: 6px solid rgba(255,255,255,0.4);
-        margin: 0 auto 30px;
-        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        border: 8px solid rgba(255,255,255,0.6);
+        margin: 0 auto 50px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         transition: transform 0.3s;
       }
   
@@ -116,22 +116,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 60px;
         flex-wrap: wrap;
-        margin-bottom: 40px;
+        margin-bottom: 0;
       }
       
       .hero-img {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        border: 3px solid rgba(255,255,255,0.4);
+        border: 5px solid rgba(255,255,255,0.6);
         object-fit: cover;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        box-shadow: 0 12px 36px rgba(0,0,0,0.3);
         transition: transform 0.3s;
       }
       .hero-img:hover {
-        transform: scale(1.1) rotate(5deg);
+        transform: scale(1.08) rotate(3deg);
+      }
+
+      .hero-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 60px 0 20px;
+        letter-spacing: -0.02em;
+      }
+  
+      .hero-subtitle {
+        font-size: 1.4rem;
+        opacity: 0.95;
+        font-weight: 300;
+        margin-bottom: 40px;
+        line-height: 1.6;
       }
 
       .hero-cta {
@@ -342,8 +358,9 @@
     
     <header class="hero">
       <div class="hero-content">
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.02em;">TekTribe Chronicles</h1>
-        <p class="subtitle" style="font-size: 1.3rem; opacity: 0.9; font-weight: 300; margin-bottom: 40px;">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
+        {{- if .Site.Params.hero_banner }}
+          <img src="{{ .Site.Params.hero_banner | relURL }}" alt="TekTribe Awakening" class="hero-banner">
+        {{- end }}
         
         <div class="hero-images">
           <img src="{{ "images/Napištu [Upscale].PNG" | relURL }}" alt="Napištu" class="hero-img">
@@ -351,9 +368,8 @@
           <img src="{{ "images/Overseer [JM Transparent].png" | relURL }}" alt="Overseer Æ" class="hero-img">
         </div>
         
-        {{- if .Site.Params.hero_banner }}
-          <img src="{{ .Site.Params.hero_banner | relURL }}" alt="TekTribe Awakening" class="hero-banner">
-        {{- end }}
+        <h1 class="hero-title">TekTribe Chronicles</h1>
+        <p class="hero-subtitle">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
         
         <a href="#latest" class="hero-cta" style="display: inline-block; padding: 16px 40px; background: white; color: var(--primary); text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">Explore the Compendium</a>
       </div>
