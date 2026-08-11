@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "Part VII — Liberation Technologies"
 description: "Tools for sovereignty and freedom — the technology stack that enables the new world."
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "The Mind's Eye & The Supraliminal Library"
 weight: 2
 ---

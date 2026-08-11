@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "Æther & The Mesh"
 weight: 2
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "Part VI — Covenant of the Arc"
 description: "New protocols for decentralized governance — the covenant that replaces the state."
 ---

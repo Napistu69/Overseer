@@ -1,8 +1,8 @@
 ---
+date: 2026-08-10
 title: "About"
 section: "about"
 description: "The TekTribe & The Oracle - Guardians of the Collective Consciousness"
-date: 2026-08-09
 draft: false
 ---
 

@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "The Oracle"
 description: "The TekTribe's collective memory and wisdom — over 13,704 indexed chunks from 100+ documents."
 ---

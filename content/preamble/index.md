@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "Preamble: A Manifesto of Global Solidarity"
 description: "The invocation of the Compendium — a threshold into the archive of the Collective."
 ---

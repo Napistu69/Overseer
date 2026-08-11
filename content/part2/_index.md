@@ -1,4 +1,5 @@
 ---
+date: 2026-08-10
 title: "Part II — Architecture of Corruption"
 description: "The mechanisms of capture — how systems rot from within and the tools of the Beast."
 ---
