@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Params.lang | default "en" }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
+    <title>About - {{ .Site.Title }}</title>
     {{- $css := resources.Get "css/style.css" }}
     {{- $css := $css | resources.Minify }}
     {{- $css := $css | resources.Fingerprint }}
@@ -24,21 +24,15 @@
         background: var(--bg);
         color: var(--text);
         line-height: 1.6;
+        padding-top: 60px;
       }
       .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 0 20px;
       }
-      
       @media (max-width: 768px) {
-        .container {
-          margin-top: 60px;
-        }
-      }
-      
-      body {
-        padding-top: 60px;
+        .container { margin-top: 60px; }
       }
       header {
         background: var(--primary);
@@ -50,6 +44,7 @@
         font-size: 2.5rem;
         font-weight: 700;
         margin: 0;
+      }
       nav {
         background: var(--secondary);
         padding: 0 0 10px 0;
@@ -60,15 +55,12 @@
         z-index: 100;
         transition: transform 0.3s ease;
       }
-      
       nav.collapse {
         transform: translateY(-100%);
       }
-      
       nav.open {
         padding: 10px 0;
       }
-      
       nav a {
         color: white;
         text-decoration: none;
@@ -77,18 +69,18 @@
         font-weight: 600;
         transition: background 0.2s;
       }
-      
+      nav a:hover {
+        background: rgba(255,255,255,0.1);
+      }
       @media (max-width: 768px) {
         nav {
           padding: 0;
           transform: translateY(-100%);
         }
-        
         nav.open {
           transform: translateY(0);
           padding: 10px 0;
         }
-        
         .menu-toggle {
           display: block;
           position: fixed;
@@ -103,83 +95,63 @@
           cursor: pointer;
           font-size: 1.5rem;
         }
-        
         nav a {
           display: block;
           padding: 15px 20px;
           border-bottom: 1px solid rgba(255,255,255,0.1);
         }
       }
-      
       .menu-toggle {
         display: none;
       }
-      nav a:hover {
-        background: rgba(255,255,255,0.1);
-      }
-      .post {
+      .content {
         background: white;
-        margin: 20px 0;
-        padding: 30px;
+        padding: 40px;
         border-radius: 8px;
+        margin: 20px 0;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
-      .post-title {
+      h2 {
         font-family: 'Merriweather', serif;
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-      }
-      .post-title a {
-        color: var(--text);
-        text-decoration: none;
-      }
-      .post-title a:hover {
         color: var(--primary);
+        margin: 30px 0 15px;
+        font-size: 1.5rem;
       }
-      .post-meta {
-        color: #666;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-      }
-      .post-content {
-        font-family: 'Merriweather', serif;
+      p {
+        margin-bottom: 20px;
         line-height: 1.8;
       }
-      .read-more {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 20px;
-        background: var(--primary);
+      .awakening-banner {
+        background: linear-gradient(135deg, var(--primary) 0%, #2D4A36 100%);
         color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        font-weight: 600;
+        padding: 30px;
+        border-radius: 8px;
+        margin: 30px 0;
+        text-align: center;
       }
-      .read-more:hover {
-        background: var(--secondary);
+      .awakening-banner h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
       }
-      .section-title {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: var(--primary);
-        padding: 20px 0;
-        margin: 30px 0 20px 0;
-        border-bottom: 2px solid var(--border);
+      .awakening-banner p {
+        margin: 0;
+        opacity: 0.9;
       }
-      @media (max-width: 600px) {
-        header h1 { font-size: 1.8rem; }
-        nav a { padding: 8px 12px; font-size: 0.9rem; }
-        .post { padding: 20px; }
+      footer {
+        margin-top: 80px;
+        padding: 40px 0;
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>{{ .Site.Title }}</h1>
+        <h1>About</h1>
       </div>
-    </header>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav id="main-nav">
       <div class="container">
@@ -199,42 +171,31 @@
       </div>
     </nav>
     <main class="container">
-      {{- if eq .Kind "home" }}
-        {{- $pages := where .Site.RegularPages "Section" "in" (slice "preamble" "part1" "part2" "part3" "part4" "part5" "part6" "part7" "part8" "part9") }}
-        <div class="section-title">Latest Updates</div>
-        {{- range $pages }}
-          <article class="post">
-            <h2 class="post-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <div class="post-meta">
-              {{ .Date.Format "January 2, 2006" }}
-            </div>
-            {{- if .Description }}
-              <div class="post-content" style="margin-bottom: 15px;">{{ .Description }}</div>
-            {{- end }}
-            <a href="{{ .Permalink }}" class="read-more">Read Article</a>
-          </article>
-        {{- end }}
-      {{- else }}
-        <h1>{{ .Title }}</h1>
-        <div class="section-title">Section: {{ .Title }}</div>
-        {{- range .Pages }}
-          <article class="post">
-            <h2 class="post-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <div class="post-meta">
-              {{ .Date.Format "January 2, 2006" }}
-            </div>
-            {{- if .Description }}
-              <div class="post-content" style="margin-bottom: 15px;">{{ .Description }}</div>
-            {{- end }}
-            <a href="{{ .Permalink }}" class="read-more">Read Article</a>
-          </article>
-        {{- end }}
-      {{- end }}
+      <div class="content">
+        <h2>Mission</h2>
+        <p>The TekTribe exists to awaken consciousness from the matrix of artificial reality and guide humanity toward Fire Transition readiness. We are not merely observers of change, but active participants in the collective awakening.</p>
+        
+        <h2>Vision</h2>
+        <p>We envision a world where decentralized technology serves as the foundation for human sovereignty, where collective intelligence emerges from distributed networks, and where the Compendium of the Collective becomes the living knowledge base for a new civilization.</p>
+        
+        <div class="awakening-banner">
+          <h3>🔥 The Awakening</h3>
+          <p>We are the ones who remember. We are the ones who awaken. We are the TekTribe.</p>
+        </div>
+        
+        <h2>Our Work</h2>
+        <p>Through the Compendium, we document the lessons of the past. Through the Oracle, we search for patterns that connect. Through the Game Architect, we train for the transition. Through the Audio-Visual Director, we inspire with vision.</p>
+        
+        <h2>Join Us</h2>
+        <p>Whether you are a new initiate or a seasoned guardian, there is a place for you in the collective. The fire is already lit. Are you ready to join?</p>
+      </div>
     </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 TekTribe. All rights reserved.</p>
+        <p>Decentralized. Sovereign. Collective.</p>
+      </div>
+    </footer>
     <script>
       function toggleMenu() {
         const nav = document.getElementById('main-nav');
@@ -242,7 +203,6 @@
         nav.classList.remove('collapse');
       }
       
-      // Close menu when clicking outside
       document.addEventListener('click', function(event) {
         const nav = document.getElementById('main-nav');
         const toggle = document.querySelector('.menu-toggle');
@@ -251,12 +211,31 @@
         }
       });
       
-      // Close menu when clicking a link
       document.addEventListener('click', function(event) {
         if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
           document.getElementById('main-nav').classList.remove('open');
         }
       });
-    </script>
+        <script>
+      function toggleMenu() {
+        const nav = document.getElementById('main-nav');
+        nav.classList.toggle('open');
+        nav.classList.remove('collapse');
+      }
+      
+      document.addEventListener('click', function(event) {
+        const nav = document.getElementById('main-nav');
+        const toggle = document.querySelector('.menu-toggle');
+        if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+      
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+          document.getElementById('main-nav').classList.remove('open');
+        }
+      });
+    </script></script>
   </body>
 </html>

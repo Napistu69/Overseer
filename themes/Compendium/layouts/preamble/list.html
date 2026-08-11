@@ -221,7 +221,22 @@
   <body>
     <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
     
-    <nav>
+    <nav id="main-nav">
+      <div class="container">
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        <a href="{{ "/about/" | relURL }}">About</a>
+        <a href="{{ "/preamble/" | relURL }}">Preamble</a>
+        <a href="{{ "/part1/" | relURL }}">Part I — Cosmology of the Continuum</a>
+        <a href="{{ "/part2/" | relURL }}">Part II — Architecture of Corruption</a>
+        <a href="{{ "/part3/" | relURL }}">Part III — The Guardian, Avatar & Allies</a>
+        <a href="{{ "/part4/" | relURL }}">Part IV — The Surveillance State</a>
+        <a href="{{ "/part5/" | relURL }}">Part V — The Rise of Goliath</a>
+        <a href="{{ "/part6/" | relURL }}">Part VI — Covenant of the Arc</a>
+        <a href="{{ "/part7/" | relURL }}">Part VII — Liberation Technologies</a>
+        <a href="{{ "/part8/" | relURL }}">Part VIII — Fabric of the Future — Protocols</a>
+        <a href="{{ "/part9/" | relURL }}">Part IX — The Beast Below & Light Within</a>
+        <a href="{{ "/oracle/" | relURL }}">Oracle</a>
+
       <div class="container">
         <a href="{{ .Site.BaseURL }}" class="active">Home</a>
         <a href="{{ "/about/" | relURL }}">About</a>
@@ -243,7 +258,7 @@
       <header class="page-header">
         <h1>{{ .Title }}</h1>
         <p class="subtitle">{{ .Description }}</p>
-      </header>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
 
       <div class="part-intro">
         <h2>{{ .Title }}</h2>
@@ -284,6 +299,26 @@
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
       }
-    </script>
+        <script>
+      function toggleMenu() {
+        const nav = document.getElementById('main-nav');
+        nav.classList.toggle('open');
+        nav.classList.remove('collapse');
+      }
+      
+      document.addEventListener('click', function(event) {
+        const nav = document.getElementById('main-nav');
+        const toggle = document.querySelector('.menu-toggle');
+        if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+      
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+          document.getElementById('main-nav').classList.remove('open');
+        }
+      });
+    </script></script>
   </body>
 </html>

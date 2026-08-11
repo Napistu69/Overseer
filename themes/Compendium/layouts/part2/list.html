@@ -40,6 +40,7 @@
         color: var(--text);
         line-height: 1.7;
         font-size: 17px;
+        padding-top: 60px;
       }
 
       .theme-toggle {
@@ -67,10 +68,19 @@
       nav {
         background: var(--bg-alt);
         border-bottom: 1px solid var(--border);
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        right: 0;
         z-index: 1000;
         box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+      }
+      nav.collapse {
+        transform: translateY(-100%);
+      }
+      nav.open {
+        padding: 10px 0;
       }
       nav .container {
         display: flex;
@@ -214,16 +224,41 @@
 
       @media (max-width: 768px) {
         .page-header h1 { font-size: 1.8rem; }
-        nav a { padding: 14px 16px; font-size: 0.9rem; }
+        nav {
+          padding: 0;
+          transform: translateY(-100%);
+        }
+        nav.open {
+          transform: translateY(0);
+          padding: 10px 0;
+        }
+        .menu-toggle {
+          display: block;
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 101;
+          background: var(--secondary);
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 1.5rem;
+        }
+        nav a {
+          padding: 15px 20px;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
       }
     </style>
   </head>
   <body>
     <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
     
-    <nav>
+    <nav id="main-nav">
       <div class="container">
-        <a href="{{ .Site.BaseURL }}" class="active">Home</a>
+        <a href="{{ .Site.BaseURL }}">Home</a>
         <a href="{{ "/about/" | relURL }}">About</a>
         <a href="{{ "/preamble/" | relURL }}">Preamble</a>
         <a href="{{ "/part1/" | relURL }}">Part I — Cosmology of the Continuum</a>
@@ -280,10 +315,30 @@
         localStorage.setItem('theme', next);
       }
 
+      function toggleMenu() {
+        const nav = document.getElementById('main-nav');
+        nav.classList.toggle('open');
+        nav.classList.remove('collapse');
+      }
+
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
       }
+
+      document.addEventListener('click', function(event) {
+        const nav = document.getElementById('main-nav');
+        const toggle = document.querySelector('.menu-toggle');
+        if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+          document.getElementById('main-nav').classList.remove('open');
+        }
+      });
     </script>
   </body>
 </html>
