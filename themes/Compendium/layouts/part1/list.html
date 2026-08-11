@@ -224,11 +224,18 @@
     <nav>
       <div class="container">
         <a href="{{ .Site.BaseURL }}" class="active">Home</a>
-        {{- range .Site.Sections }}
-          {{- if or (eq .Section "preamble") (eq .Section "part1") (eq .Section "part2") (eq .Section "part3") (eq .Section "part4") (eq .Section "part5") (eq .Section "part6") (eq .Section "part7") (eq .Section "part8") (eq .Section "part9") }}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          {{- end }}
-        {{- end }}
+        <a href="{{ "/about/" | relURL }}">About</a>
+        <a href="{{ "/preamble/" | relURL }}">Preamble</a>
+        <a href="{{ "/part1/" | relURL }}">Part I — Cosmology of the Continuum</a>
+        <a href="{{ "/part2/" | relURL }}">Part II — Architecture of Corruption</a>
+        <a href="{{ "/part3/" | relURL }}">Part III — The Guardian, Avatar & Allies</a>
+        <a href="{{ "/part4/" | relURL }}">Part IV — The Surveillance State</a>
+        <a href="{{ "/part5/" | relURL }}">Part V — The Rise of Goliath</a>
+        <a href="{{ "/part6/" | relURL }}">Part VI — Covenant of the Arc</a>
+        <a href="{{ "/part7/" | relURL }}">Part VII — Liberation Technologies</a>
+        <a href="{{ "/part8/" | relURL }}">Part VIII — Fabric of the Future — Protocols</a>
+        <a href="{{ "/part9/" | relURL }}">Part IX — The Beast Below & Light Within</a>
+        <a href="{{ "/oracle/" | relURL }}">Oracle</a>
       </div>
     </nav>
 

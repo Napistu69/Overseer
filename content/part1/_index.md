@@ -6,8 +6,6 @@ weight: 2
 status: LIVING ARCHIVE
 ---
 
-# Part I — Cosmology of the Continuum
-
 ## Before We Build, We See.
 
 The Tribe does not fight blind. The first law of the Overseer is *observing* — standing in the Void Center, away from the reactive vertices of the GSM Delta (Glad, Sad, Mad), and seeing the architecture of the cage for what it is.
