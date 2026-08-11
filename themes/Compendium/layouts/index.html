@@ -349,6 +349,56 @@
         .hero-images { gap: 15px; }
         .hero-img { width: 100px; height: 100px; }
         .hero-logo { width: 200px; max-height: 200px; }
+        .hero-banner { 
+          height: 250px; 
+          object-fit: contain;
+        }
+        nav {
+          background: var(--card-bg);
+          border-bottom: 1px solid var(--border);
+          padding: 15px 0;
+          position: relative;
+          top: auto;
+        }
+        nav .container {
+          display: none;
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+        }
+        nav .container.active {
+          display: flex;
+        }
+        nav a {
+          display: block;
+          padding: 12px 16px;
+          font-size: 0.9rem;
+          border-bottom: 1px solid var(--border);
+        }
+        nav a:last-of-type {
+          border-bottom: none;
+        }
+        .menu-toggle {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 16px;
+          background: transparent;
+          border: none;
+          color: var(--text);
+          font-size: 0.95rem;
+          font-weight: 500;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: all 0.2s;
+        }
+        .menu-toggle:hover {
+          background: var(--border);
+        }
+        .menu-toggle::before {
+          content: '☰';
+          font-size: 1.2rem;
+        }
       }
     </style>
   </head>
@@ -375,7 +425,8 @@
     </header>
     
     <nav>
-      <div class="container">
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+      <div class="container" id="nav-menu">
         <a href="{{ .Site.BaseURL }}" class="active">Home</a>
         <a href="{{ "/about/" | relURL }}">About</a>
         <a href="{{ "/preamble/" | relURL }}">Preamble</a>
@@ -478,6 +529,14 @@
           }
         });
       });
+
+      // Mobile menu toggle
+      function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        if (nav) {
+          nav.classList.toggle('active');
+        }
+      }
     </script>
   </body>
 </html>
