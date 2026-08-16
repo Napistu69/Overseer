@@ -602,6 +602,84 @@
 
     // Initialize
     loadSearchIndex();
+    loadSavedDrafts();
+
+    // Contribution Editor
+    function saveContribution() {
+      const title = document.getElementById('contrib-title').value.trim();
+      const category = document.getElementById('contrib-category').value;
+      const content = document.getElementById('contrib-content').value.trim();
+      if (!title || !content) { alert('Please fill in Title and Content.'); return; }
+
+      const drafts = JSON.parse(localStorage.getItem('oracle-drafts') || '[]');
+      const draft = {
+        id: Date.now(),
+        title, category, content,
+        created: new Date().toLocaleString()
+      };
+      drafts.push(draft);
+      localStorage.setItem('oracle-drafts', JSON.stringify(drafts));
+      alert('Draft saved locally.');
+      loadSavedDrafts();
+    }
+
+    function exportContribution() {
+      const title = document.getElementById('contrib-title').value.trim();
+      const category = document.getElementById('contrib-category').value;
+      const content = document.getElementById('contrib-content').value.trim();
+      if (!title || !content) { alert('Please fill in Title and Content.'); return; }
+
+      const md = `---\ntitle: "${title}"\ncategory: ${category}\ndate: ${new Date().toISOString().split('T')[0]}\n---\n\n${content}\n`;
+      const blob = new Blob([md], { type: 'text/markdown' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${title.replace(/\s+/g, '_').toLowerCase()}.md`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function clearForm() {
+      document.getElementById('contrib-title').value = '';
+      document.getElementById('contrib-content').value = '';
+    }
+
+    function loadSavedDrafts() {
+      const drafts = JSON.parse(localStorage.getItem('oracle-drafts') || '[]');
+      const container = document.getElementById('saved-list');
+      if (drafts.length === 0) {
+        container.innerHTML = '<p class="saved-empty">No saved drafts yet.</p>';
+        return;
+      }
+      container.innerHTML = drafts.map(d => `
+        <div class="saved-item">
+          <div>
+            <div class="saved-title">${d.title}</div>
+            <div class="saved-meta">${d.category} • ${d.created}</div>
+          </div>
+          <div class="saved-actions">
+            <button class="btn-load" onclick="loadDraft(${d.id})">Load</button>
+            <button class="btn-delete" onclick="deleteDraft(${d.id})">Delete</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function loadDraft(id) {
+      const drafts = JSON.parse(localStorage.getItem('oracle-drafts') || '[]');
+      const draft = drafts.find(d => d.id === id);
+      if (!draft) return;
+      document.getElementById('contrib-title').value = draft.title;
+      document.getElementById('contrib-category').value = draft.category;
+      document.getElementById('contrib-content').value = draft.content;
+    }
+
+    function deleteDraft(id) {
+      let drafts = JSON.parse(localStorage.getItem('oracle-drafts') || '[]');
+      drafts = drafts.filter(d => d.id !== id);
+      localStorage.setItem('oracle-drafts', JSON.stringify(drafts));
+      loadSavedDrafts();
+    }
   </script>
 </body>
 </html>
