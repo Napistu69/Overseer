@@ -69,11 +69,16 @@
       nav {
         background: var(--bg-alt);
         border-bottom: 1px solid var(--border);
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        right: 0;
         z-index: 1000;
         box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
       }
+      nav.collapse { transform: translateY(-100%); }
+      nav.open { padding: 10px 0; }
       nav .container {
         display: flex;
         justify-content: center;
@@ -94,6 +99,29 @@
       nav a:hover, nav a.active {
         background: var(--bg);
         border-bottom-color: var(--primary);
+      }
+      @media (max-width: 768px) {
+        .article-header h1 { font-size: 1.8rem; }
+        nav { padding: 0; }
+        nav.open { padding: 10px 0; }
+        .menu-toggle {
+          display: block;
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 101;
+          background: var(--secondary);
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 1.5rem;
+        }
+        nav a {
+          padding: 15px 20px;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
       }
 
       /* Content */
@@ -211,7 +239,8 @@
     </style>
   </head>
   <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     
     <nav>
       <div class="container">
@@ -268,6 +297,25 @@
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
       }
+
+      function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('open');
+      }
+
+      document.addEventListener('click', function(event) {
+        const nav = document.querySelector('nav');
+        const toggle = document.querySelector('.menu-toggle');
+        if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+          document.querySelector('nav').classList.remove('open');
+        }
+      });
     </script>
   </body>
 </html>
