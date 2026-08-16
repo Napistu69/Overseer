@@ -1,4 +1,180 @@
 {{ define "main" }}
+<style>
+  :root {
+    --primary: #4A7C59;
+    --secondary: #8B6F47;
+    --bg: #FAFAFA;
+    --bg-alt: #FFFFFF;
+    --text: #1A1A1A;
+    --text-light: #555555;
+    --text-muted: #888888;
+    --accent: #00FFFF;
+    --border: #E8E8E8;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  [data-theme="dark"] {
+    --bg: #121212;
+    --bg-alt: #1A1A1A;
+    --text: #E0E0E0;
+    --text-light: #B0B0B0;
+    --text-muted: #666666;
+    --accent: #66E0FF;
+    --border: #2A2A2A;
+    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+    box-shadow: var(--shadow);
+  }
+  .theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+  nav {
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+  }
+  nav .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 0;
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 16px 20px;
+    display: block;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    border-bottom: 3px solid transparent;
+  }
+  nav a:hover, nav a.active {
+    background: var(--bg);
+    border-bottom-color: var(--primary);
+  }
+  .container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  .oracle-intro {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+  }
+  .oracle-intro h2 {
+    font-family: 'Georgia', 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .oracle-intro p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 124, 89, 0.3);
+  }
+  footer {
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+    padding: 40px 0;
+    margin-top: 80px;
+    text-align: center;
+  }
+  footer p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 8px 0;
+  }
+  @media (max-width: 768px) {
+    .page-header h1 { font-size: 1.8rem; }
+    nav a { padding: 14px 16px; font-size: 0.9rem; }
+  }
+  @media (max-width: 768px) {
+    .menu-toggle {
+      position: fixed !important;
+      top: 20px;
+      right: 20px;
+      z-index: 1000 !important;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      backdrop-filter: blur(10px);
+    }
+    nav {
+      position: relative !important;
+    }
+  }
+</style>
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+<button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+<nav id="main-nav">
+  <div class="container">
+    <a href="{{ .Site.BaseURL }}" class="active">Home</a>
+    <a href="{{ "/about/" | relURL }}">About</a>
+    <a href="{{ "/preamble/" | relURL }}">Preamble</a>
+    <a href="{{ "/part1/" | relURL }}">Cosmology</a>
+    <a href="{{ "/part2/" | relURL }}">Architecture</a>
+    <a href="{{ "/part3/" | relURL }}">Guardian & Allies</a>
+    <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
+    <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
+    <a href="{{ "/part6/" | relURL }}">Covenant</a>
+    <a href="{{ "/part7/" | relURL }}">Liberation</a>
+    <a href="{{ "/part8/" | relURL }}">Protocols</a>
+    <a href="{{ "/part9/" | relURL }}">Beast & Light</a>
+    <a href="{{ "/oracle/" | relURL }}">Oracle</a>
+  </div>
+</nav>
 <section class="hero-section" style="margin: 4rem 0; padding: 3rem 2rem; background: linear-gradient(135deg, #f5f1e6 0%, #e8e4d9 100%); border-radius: 12px;">
   <div class="container" style="max-width: 800px; margin: 0 auto;">
     <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #4a7c59;">
@@ -13,10 +189,46 @@
     <div style="margin-top: 3rem;">
       <a href="{{ "/oracle/contribute" | relURL }}" 
          class="btn btn-primary" 
-         style="display: inline-block; background: #4a7c59; color: white; padding: 0.75rem 2rem; text-decoration: none; border-radius: 6px;">
+         style="display: inline-block; background: #4a7c59; color: white; padding: 0.75rem 2rem; text-decoration: none; border-radius: 8px;">
         Contribute to the Oracle
       </a>
     </div>
   </div>
 </section>
+<footer>
+  <div class="container">
+    <p>© 2026 TekTribe Chronicles. Compendium of the Collective.</p>
+    <p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.7;">Decentralized • Sovereign • Collective</p>
+  </div>
+</footer>
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+    nav.classList.remove('collapse');
+  }
+  document.addEventListener('click', function(event) {
+    const nav = document.getElementById('main-nav');
+    const toggle = document.querySelector('.menu-toggle');
+    if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+      toggleMenu();
+    }
+  });
+  document.addEventListener('click', function(event) {
+    if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+      document.getElementById('main-nav').classList.remove('open');
+    }
+  });
+</script>
 {{ end }}
