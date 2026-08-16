@@ -1,332 +1,210 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Params.lang | default "en" }}" class="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-    <style>
-      :root {
-        --primary: #4A7C59;
-        --secondary: #8B6F47;
-        --bg: #FAFAFA;
-        --bg-alt: #FFFFFF;
-        --text: #1A1A1A;
-        --text-light: #555555;
-        --text-muted: #888888;
-        --accent: #00FFFF;
-        --border: #E8E8E8;
-        --shadow: 0 2px 12px rgba(0,0,0,0.06);
-      }
-
-      [data-theme="dark"] {
-        --bg: #121212;
-        --bg-alt: #1A1A1A;
-        --text: #E0E0E0;
-        --text-light: #B0B0B0;
-        --text-muted: #666666;
-        --accent: #66E0FF;
-        --border: #2A2A2A;
-        --shadow: 0 2px 12px rgba(0,0,0,0.3);
-      }
-
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.7;
-        font-size: 17px;
-      }
-
-      .theme-toggle {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        background: var(--bg-alt);
-        border: 1px solid var(--border);
-        color: var(--text);
-        padding: 10px 16px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 500;
-        backdrop-filter: blur(10px);
-        transition: all 0.3s;
-        box-shadow: var(--shadow);
-      }
-      .theme-toggle:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-      }
-
-      nav {
-        background: var(--bg-alt);
-        border-bottom: 1px solid var(--border);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: var(--shadow);
-      }
-      nav .container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2px;
-        padding: 0;
-      }
-      nav a {
-        color: var(--text);
-        text-decoration: none;
-        padding: 16px 20px;
-        display: block;
-        font-weight: 500;
-        font-size: 0.95rem;
-        transition: background 0.2s;
-        border-bottom: 3px solid transparent;
-      }
-      nav a:hover, nav a.active {
-        background: var(--bg);
-        border-bottom-color: var(--primary);
-      }
-
-      .container {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      .page-header {
-        margin: 60px 0 40px;
-        text-align: center;
-      }
-
-      .page-header h1 {
-        font-family: 'Georgia', 'Merriweather', serif;
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-bottom: 16px;
-        line-height: 1.3;
-        color: var(--primary);
-      }
-
-      .page-header .subtitle {
-        color: var(--text-light);
-        font-size: 1.1rem;
-        margin-bottom: 32px;
-      }
-
-      .part-intro {
-        background: var(--bg-alt);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 24px;
-        margin-bottom: 40px;
-        box-shadow: var(--shadow);
-      }
-
-      .part-intro h2 {
-        font-family: 'Georgia', 'Merriweather', serif;
-        font-size: 1.5rem;
-        color: var(--primary);
-        margin-bottom: 12px;
-      }
-
-      .part-intro p {
-        color: var(--text-light);
-        line-height: 1.7;
-        margin-bottom: 12px;
-      }
-
-      .chapter-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .chapter-card {
-        background: var(--bg-alt);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 24px;
-        transition: all 0.3s;
-        box-shadow: var(--shadow);
-      }
-
-      .chapter-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-        border-color: var(--primary);
-      }
-
-      .chapter-card h2 {
-        font-family: 'Georgia', 'Merriweather', serif;
-        font-size: 1.4rem;
-        color: var(--primary);
-        margin-bottom: 12px;
-      }
-
-      .chapter-card .card-date {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .chapter-card p {
-        color: var(--text-light);
-        line-height: 1.7;
-        margin-bottom: 16px;
-      }
-
-      .chapter-card a {
-        display: inline-block;
-        padding: 10px 24px;
-        background: var(--primary);
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: background 0.2s;
-      }
-
-      .chapter-card a:hover {
-        background: var(--secondary);
-      }
-
-      footer {
-        background: var(--bg-alt);
-        border-top: 1px solid var(--border);
-        padding: 40px 0;
-        margin-top: 80px;
-        text-align: center;
-      }
-      footer p {
-        color: var(--text-muted);
-        font-size: 0.95rem;
-        margin: 8px 0;
-      }
-
-      @media (max-width: 768px) {
-        .page-header h1 { font-size: 1.8rem; }
-        nav a { padding: 14px 16px; font-size: 0.9rem; }
-      }
-    
+<html lang="{{ .Site.Params.lang | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      --primary: #4A7C59;
+      --secondary: #8B6F47;
+      --bg: #FAFAFA;
+      --bg-alt: #FFFFFF;
+      --text: #1A1A1A;
+      --text-light: #555555;
+      --text-muted: #888888;
+      --accent: #00FFFF;
+      --border: #E8E8E8;
+      --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    [data-theme="dark"] {
+      --bg: #121212;
+      --bg-alt: #1A1A1A;
+      --text: #E0E0E0;
+      --text-light: #B0B0B0;
+      --text-muted: #666666;
+      --accent: #66E0FF;
+      --border: #2A2A2A;
+      --shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+      box-shadow: var(--shadow);
+    }
+    .theme-toggle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+    nav {
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow);
+    }
+    nav .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2px;
+      padding: 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 16px 20px;
+      display: block;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      border-bottom: 3px solid transparent;
+    }
+    nav a:hover, nav a.active {
+      background: var(--bg);
+      border-bottom-color: var(--primary);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    .page-header { margin: 60px 0 40px; text-align: center; }
+    .page-header h1 {
+      font-family: 'Georgia', 'Merriweather', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.3;
+      color: var(--primary);
+    }
+    .page-header .subtitle { color: var(--text-light); font-size: 1.1rem; margin-bottom: 32px; }
+    .content {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .content h2 {
+      font-family: 'Georgia', 'Merriweather', serif;
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .content h3 {
+      font-family: 'Georgia', 'Merriweather', serif;
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin: 20px 0 10px;
+    }
+    .content p { color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
+    .content ul { margin: 12px 0; padding-left: 24px; }
+    .content li { color: var(--text-light); margin-bottom: 8px; }
+    .content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+    .content blockquote {
+      border-left: 4px solid var(--primary);
+      padding-left: 20px;
+      margin: 20px 0;
+      color: var(--text-light);
+      font-style: italic;
+    }
+    .content strong { color: var(--text); }
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      margin-top: 80px;
+      text-align: center;
+    }
+    footer p { color: var(--text-muted); font-size: 0.95rem; margin: 8px 0; }
     @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.8rem; }
+      nav a { padding: 14px 16px; font-size: 0.9rem; }
+      nav { position: relative !important; }
       .menu-toggle {
         position: fixed !important;
         top: 20px;
         right: 20px;
         z-index: 1000 !important;
-        background: var(--bg-alt);
-        border: 1px solid var(--border);
-        color: var(--text);
-        padding: 10px 16px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        backdrop-filter: blur(10px);
-      }
-
-      nav {
-        position: relative !important;
       }
     }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    </style>
-  </head>
-  <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-    
-    <nav id="main-nav">
-      <div class="container">
-        <a href="{{ .Site.BaseURL }}" class="active">Home</a>
-        <a href="{{ "/about/" | relURL }}">About</a>
-        <a href="{{ "/preamble/" | relURL }}">Preamble</a>
-        <a href="{{ "/part1/" | relURL }}">Cosmology</a>
-        <a href="{{ "/part2/" | relURL }}">Architecture</a>
-        <a href="{{ "/part3/" | relURL }}">Guardian & Allies</a>
-        <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
-        <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
-        <a href="{{ "/part6/" | relURL }}">Covenant</a>
-        <a href="{{ "/part7/" | relURL }}">Liberation</a>
-        <a href="{{ "/part8/" | relURL }}">Protocols</a>
-        <a href="{{ "/part9/" | relURL }}">Beast & Light</a>
-        <a href="{{ "/oracle/" | relURL }}">Oracle</a>
-      </div>
-    </nav>
-
+  <nav id="main-nav">
     <div class="container">
-      <header class="page-header">
-        <h1>{{ .Title }}</h1>
-        <p class="subtitle">{{ .Description }}</p>
-          <button class="menu-toggle" onclick="toggleMenu()">☰</button></header>
-
-      <div class="part-intro">
-        <h2>{{ .Title }}</h2>
-        {{ .Content }}
-      </div>
-
-      <div class="chapter-list">
-        {{- range .Pages }}
-          <article class="chapter-card">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <div class="card-date">{{ .Date.Format "January 2, 2006" }}</div>
-            {{- if .Description }}
-              <p>{{ .Description }}</p>
-            {{- end }}
-            <a href="{{ .Permalink }}">Read Chapter →</a>
-          </article>
-        {{- end }}
-      </div>
+      <a href="{{ .Site.BaseURL }}">Home</a>
+      <a href="{{ "/about/" | relURL }}">About</a>
+      <a href="{{ "/preamble/" | relURL }}">Preamble</a>
+      <a href="{{ "/part1/" | relURL }}">Cosmology of the Continuum</a>
+      <a href="{{ "/part2/" | relURL }}">Architecture of Corruption</a>
+      <a href="{{ "/part3/" | relURL }}">Guardian, Avatar & Allies</a>
+      <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
+      <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
+      <a href="{{ "/part6/" | relURL }}">Covenant of the A.R.C.</a>
+      <a href="{{ "/part7/" | relURL }}">Liberation Technologies</a>
+      <a href="{{ "/part8/" | relURL }}">TekTribe Protocols</a>
+      <a href="{{ "/part9/" | relURL }}">Beast Below & Light Within</a>
+      <a href="{{ "/oracle/" | relURL }}">Oracle</a>
     </div>
+  </nav>
 
-    <footer>
-      <div class="container">
-        <p>© 2026 TekTribe Chronicles. Compendium of the Collective.</p>
-        <p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.7;">Decentralized • Sovereign • Collective</p>
-      </div>
-    </footer>
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p class="subtitle">{{ .Description }}</p>
+    </header>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
 
-    <script>
-      function toggleTheme() {
-        const html = document.documentElement;
-        const current = html.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-      }
+  <footer>
+    <div class="container">
+      <p>© 2026 TekTribe Chronicles. Compendium of the Collective.</p>
+      <p style="font-size: 0.75rem; opacity: 0.7;">Decentralized • Sovereign • Collective</p>
+    </div>
+  </footer>
 
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-      }
-        <script>
-      function toggleMenu() {
-        const nav = document.getElementById('main-nav');
-        nav.classList.toggle('open');
-        nav.classList.remove('collapse');
-      }
-      
-      document.addEventListener('click', function(event) {
-        const nav = document.getElementById('main-nav');
-        const toggle = document.querySelector('.menu-toggle');
-        if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
-          toggleMenu();
-        }
-      });
-      
-      document.addEventListener('click', function(event) {
-        if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
-          document.getElementById('main-nav').classList.remove('open');
-        }
-      });
-    </script></script>
-  </body>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+    function toggleMenu() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('open');
+    }
+  </script>
+</body>
 </html>
