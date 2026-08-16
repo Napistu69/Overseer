@@ -4,7 +4,6 @@
 # Hugo
 .cache/
 hugo_cache/
-
 # IDE
 .vscode/
 .idea/
