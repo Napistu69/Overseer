@@ -1,7 +1,6 @@
 ---
 date: 2026-08-10
 title: "Home"
-type: "home"
 description: "Welcome to the TekTribe Chronicles Compendium — The living archive of the Collective."
 ---
 
