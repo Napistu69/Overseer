@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+  <style>
+    :root { --primary: #4A7C59; --secondary: #8B6F47; --bg: #FAFAFA; --text: #1A1A1A; }
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%); color: white; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem; opacity: 0.9; }
+    .btn { display: inline-block; background: var(--primary); color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+    .btn:hover { background: #3a6c4a; transform: translateY(-2px); }
+    nav { background: rgba(26,26,26,0.95); padding: 1rem 2rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(10px); }
+    nav .logo { color: white; font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; }
+    nav ul { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+    nav a { color: #E0E0E0; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: white; }
+    .theme-toggle { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; }
+    @media (max-width: 768px) { .hero h1 { font-size: 2rem; } nav ul { display: none; } }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="logo">TEKTRIBE</div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/preamble/">Preamble</a></li>
+    <li><a href="/oracle/">Oracle</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<main class="hero">
+  <h1>TEKTRIBE CHRONICLES</h1>
+  <p>Compendium of the Collective — A decentralized archive of resistance, awakening, and liberation.</p>
+  <a href="/part1/" class="btn">Begin the Awakening →</a>
+</main>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }
+  const saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+</script>
+</body>
+</html>
