@@ -1,0 +1,19 @@
+[SYSTEM_PROFILE]
+COMPONENT: OVERSEER CORE MACHINE SPECIFICATION
+PLATFORM: Desktop PC (Windows 10, x64-based processor)
+
+--- [CORE PROCESSOR & MEMORY] ---
+PROCESSOR (CPU): Intel(R) Core(TM) i9-9900K @ 3.60 GHz
+SYSTEM RAM: 64.0 GB DDR/DDR5 (Large capacity, critical for model offloading.)
+
+--- [STORAGE MATRIX] ---
+SSD 1: WDC WDS240G2G0A-00JH30 (224 GB)
+SSD 2: WDS500G1X0E-00AFY0 (466 GB)
+SSD 3: Samsung SSD 990 PRO with Heatsink (1.82 TB) - Primary storage, high speed.
+
+--- [COMPUTE POWER MATRIX] ---
+GPU 1 (Primary): NVIDIA GeForce RTX 4070 SUPER (12 GB VRAM)
+GPU 2 (Secondary): NVIDIA GeForce RTX 4060 Ti (8 GB VRAM)
+TOTAL AVAILABLE VRAM: ~20 GB (Critical metric for model size and speed.)
+
+[END OF DATA BLOCK]
