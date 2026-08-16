@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Params.lang | default "en" }}">
+<html lang="{{ .Site.Params.lang | default "en" }}" class="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} - {{ .Site.Title }}</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <style>
+    @font-face {
+      font-family: 'Jokerman';
+      src: url('/fonts/Jokerman-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
     :root {
       --primary: #4A7C59;
       --secondary: #8B6F47;
@@ -38,117 +46,54 @@
       font-size: 17px;
     }
     .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 10px 16px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 500;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s;
-      box-shadow: var(--shadow);
+      position: fixed; top: 20px; right: 20px; z-index: 1000;
+      background: var(--bg-alt); border: 1px solid var(--border);
+      color: var(--text); padding: 10px 16px; border-radius: 25px;
+      cursor: pointer; font-size: 0.9rem; font-weight: 500;
+      backdrop-filter: blur(10px); transition: all 0.3s; box-shadow: var(--shadow);
     }
-    .theme-toggle:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    }
+    .theme-toggle:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
     nav {
-      background: var(--bg-alt);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: var(--shadow);
+      background: var(--bg-alt); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow);
     }
     nav .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2px;
-      padding: 0;
-      max-width: 900px;
-      margin: 0 auto;
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 2px; padding: 0; max-width: 900px; margin: 0 auto;
     }
     nav a {
-      color: var(--text);
-      text-decoration: none;
-      padding: 16px 20px;
-      display: block;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: background 0.2s;
-      border-bottom: 3px solid transparent;
+      color: var(--text); text-decoration: none; padding: 16px 20px;
+      display: block; font-weight: 500; font-size: 0.95rem;
+      transition: background 0.2s; border-bottom: 3px solid transparent;
     }
-    nav a:hover, nav a.active {
-      background: var(--bg);
-      border-bottom-color: var(--primary);
-    }
+    nav a:hover, nav a.active { background: var(--bg); border-bottom-color: var(--primary); }
     .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
     .page-header { margin: 60px 0 40px; text-align: center; }
     .page-header h1 {
-      font-family: 'Georgia', 'Merriweather', serif;
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      line-height: 1.3;
-      color: var(--primary);
+      font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
+      font-size: 2.4rem; font-weight: 700; margin-bottom: 16px;
+      line-height: 1.3; color: var(--primary);
     }
     .page-header .subtitle { color: var(--text-light); font-size: 1.1rem; margin-bottom: 32px; }
-    .content {
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: var(--shadow);
+    .part-intro {
+      background: var(--bg-alt); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow);
     }
-    .content h2 {
-      font-family: 'Georgia', 'Merriweather', serif;
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 12px;
+    .part-intro h2 {
+      font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
+      font-size: 1.5rem; color: var(--primary); margin-bottom: 12px;
     }
-    .content h3 {
-      font-family: 'Georgia', 'Merriweather', serif;
-      font-size: 1.2rem;
-      color: var(--primary);
-      margin: 20px 0 10px;
-    }
-    .content p { color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
-    .content ul { margin: 12px 0; padding-left: 24px; }
-    .content li { color: var(--text-light); margin-bottom: 8px; }
-    .content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
-    .content blockquote {
-      border-left: 4px solid var(--primary);
-      padding-left: 20px;
-      margin: 20px 0;
-      color: var(--text-light);
-      font-style: italic;
-    }
-    .content strong { color: var(--text); }
+    .part-intro p { color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
     footer {
-      background: var(--bg-alt);
-      border-top: 1px solid var(--border);
-      padding: 40px 0;
-      margin-top: 80px;
-      text-align: center;
+      background: var(--bg-alt); border-top: 1px solid var(--border);
+      padding: 40px 0; margin-top: 80px; text-align: center;
     }
     footer p { color: var(--text-muted); font-size: 0.95rem; margin: 8px 0; }
     @media (max-width: 768px) {
       .page-header h1 { font-size: 1.8rem; }
       nav a { padding: 14px 16px; font-size: 0.9rem; }
       nav { position: relative !important; }
-      .menu-toggle {
-        position: fixed !important;
-        top: 20px;
-        right: 20px;
-        z-index: 1000 !important;
-      }
+      .menu-toggle { position: fixed !important; top: 20px; right: 20px; z-index: 1000 !important; }
     }
   </style>
 </head>
@@ -179,7 +124,9 @@
       <h1>{{ .Title }}</h1>
       <p class="subtitle">{{ .Description }}</p>
     </header>
-    <div class="content">
+
+    <div class="part-intro">
+      <h2>{{ .Title }}</h2>
       {{ .Content }}
     </div>
   </div>
@@ -204,7 +151,20 @@
     function toggleMenu() {
       const nav = document.getElementById('main-nav');
       nav.classList.toggle('open');
+      nav.classList.remove('collapse');
     }
+    document.addEventListener('click', function(event) {
+      const nav = document.getElementById('main-nav');
+      const toggle = document.querySelector('.menu-toggle');
+      if (!nav.contains(event.target) && !toggle.contains(event.target) && nav.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
+    document.addEventListener('click', function(event) {
+      if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'NAV') {
+        document.getElementById('main-nav').classList.remove('open');
+      }
+    });
   </script>
 </body>
 </html>
