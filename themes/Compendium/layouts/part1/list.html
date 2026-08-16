@@ -219,23 +219,24 @@
     </style>
   </head>
   <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
     
     <nav>
       <nav id="main-nav">
         <div class="container">
-          <a href="{{ .Site.BaseURL }}">Home</a>
+          <a href="{{ .Site.BaseURL }}" class="active">Home</a>
           <a href="{{ "/about/" | relURL }}">About</a>
           <a href="{{ "/preamble/" | relURL }}">Preamble</a>
-          <a href="{{ "/part1/" | relURL }}">Part I — Cosmology of the Continuum</a>
-          <a href="{{ "/part2/" | relURL }}">Part II — Architecture of Corruption</a>
-          <a href="{{ "/part3/" | relURL }}">Part III — The Guardian, Avatar & Allies</a>
-          <a href="{{ "/part4/" | relURL }}">Part IV — The Surveillance State</a>
-          <a href="{{ "/part5/" | relURL }}">Part V — The Rise of Goliath</a>
-          <a href="{{ "/part6/" | relURL }}">Part VI — Covenant of the Arc</a>
-          <a href="{{ "/part7/" | relURL }}">Part VII — Liberation Technologies</a>
-          <a href="{{ "/part8/" | relURL }}">Part VIII — Fabric of the Future — Protocols</a>
-          <a href="{{ "/part9/" | relURL }}">Part IX — The Beast Below & Light Within</a>
+          <a href="{{ "/part1/" | relURL }}">Cosmology</a>
+          <a href="{{ "/part2/" | relURL }}">Architecture</a>
+          <a href="{{ "/part3/" | relURL }}">Guardian & Allies</a>
+          <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
+          <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
+          <a href="{{ "/part6/" | relURL }}">Covenant</a>
+          <a href="{{ "/part7/" | relURL }}">Liberation</a>
+          <a href="{{ "/part8/" | relURL }}">Protocols</a>
+          <a href="{{ "/part9/" | relURL }}">Beast & Light</a>
           <a href="{{ "/oracle/" | relURL }}">Oracle</a>
       </div>
     </nav>
