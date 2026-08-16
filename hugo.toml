@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'TekTribe Chronicles'
 theme = 'Compendium'
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [params]
   author = "Overseer Æ"
   description = "Compendium of the Collective"
