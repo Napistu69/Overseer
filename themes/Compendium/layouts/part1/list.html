@@ -242,15 +242,15 @@
         <a href="{{ .Site.BaseURL }}" class="active">Home</a>
         <a href="{{ "/about/" | relURL }}">About</a>
         <a href="{{ "/preamble/" | relURL }}">Preamble</a>
-        <a href="{{ "/part1/" | relURL }}">Cosmology</a>
-        <a href="{{ "/part2/" | relURL }}">Architecture</a>
-        <a href="{{ "/part3/" | relURL }}">Guardian & Allies</a>
-        <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
-        <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
-        <a href="{{ "/part6/" | relURL }}">Covenant</a>
-        <a href="{{ "/part7/" | relURL }}">Liberation</a>
-        <a href="{{ "/part8/" | relURL }}">Protocols</a>
-        <a href="{{ "/part9/" | relURL }}">Beast & Light</a>
+        <a href="{{ "/part1/" | relURL }}">Cosmology of the Continuum</a>
+                <a href="{{ "/part2/" | relURL }}">Architecture of Corruption</a>
+                <a href="{{ "/part3/" | relURL }}">Guardian, Avatar & Allies</a>
+                <a href="{{ "/part4/" | relURL }}">Surveillance State</a>
+                <a href="{{ "/part5/" | relURL }}">Rise of Goliath</a>
+                <a href="{{ "/part6/" | relURL }}">Covenant of the A.R.C.</a>
+                <a href="{{ "/part7/" | relURL }}">Liberation Technologies</a>
+                <a href="{{ "/part8/" | relURL }}">TekTribe Protocols</a>
+                <a href="{{ "/part9/" | relURL }}">Beast Below & Light Within</a>
         <a href="{{ "/oracle/" | relURL }}">Oracle</a>
       </div>
     </nav>
@@ -271,8 +271,8 @@
           <article class="chapter-card">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <div class="card-date">{{ .Date.Format "January 2, 2006" }}</div>
-            {{- if .Description }}
-              <p>{{ .Description }}</p>
+            {{- if .Summary }}
+              <p>{{ .Summary | plainify | truncate 150 }}</p>
             {{- end }}
             <a href="{{ .Permalink }}">Read Chapter →</a>
           </article>

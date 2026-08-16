@@ -475,7 +475,7 @@
             {{- range where .Site.RegularPages "Section" "in" (slice "preamble" "part1") }}
               <article class="card">
                 <h2>{{ .Title }}</h2>
-                <p>{{ .Description | default .Summary | truncate 150 }}</p>
+                <p>{{ .Description | default .Summary | plainify | truncate 150 }}</p>
                 <a href="{{ .Permalink }}" class="card-link">Read Entry</a>
               </article>
             {{- end }}
