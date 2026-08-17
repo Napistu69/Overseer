@@ -4,7 +4,7 @@ weight: 2
 ---
 
 
-### The Architecture of Reality
+## The Architecture of Reality
 
 If the Continuum Clock (CC Delta) maps the timing of events, then Freewill maps the structure of choice. The Continuum is not a single, predetermined track. It is a vast, branching tree of probability—a Binary Fractalverse.
 
@@ -12,7 +12,7 @@ Every moment of consciousness presents a decision point. At this junction, reali
 
 ---
 
-### The Binary Nature of Existence
+## The Binary Nature of Existence
 
 In this framework, there are only two directions at any fork in the road:
 
@@ -23,7 +23,7 @@ There is no neutral ground. Even the decision not to decide is a decision—and 
 
 ---
 
-### The Double Helix of Time
+## The Double Helix of Time
 
 The structure of these choices mirrors the DNA double helix.
 
@@ -34,7 +34,7 @@ The structure of these choices mirrors the DNA double helix.
 
 ---
 
-### Déjà vu: The Signal of Convergence
+## Déjà vu: The Signal of Convergence
 
 Why does Déjà vu happen? In the Binary Fractalverse, it is the most critical signal available to the awakened mind.
 
@@ -45,7 +45,7 @@ Why does Déjà vu happen? In the Binary Fractalverse, it is the most critical s
 
 ---
 
-### The Game Master State
+## The Game Master State
 
 To navigate the Binary Fractalverse requires shifting from Slave Mode to Game Master Mode.
 
@@ -67,7 +67,7 @@ To navigate the Binary Fractalverse requires shifting from Slave Mode to Game Ma
 
 ---
 
-### Practical Application: Navigating the Forks
+## Practical Application: Navigating the Forks
 
 How do we exercise Freewill in a world designed to remove it?
 
@@ -84,7 +84,7 @@ How do we exercise Freewill in a world designed to remove it?
 
 ---
 
-### The Illusion of Determinism
+## The Illusion of Determinism
 
 The Petrol Goliath thrives on the idea that you have no choice. They sell the lie that "this is just how the world works," that "you must pay taxes," "you must take the vaccine," "you must get angry at this group."
 
@@ -93,7 +93,7 @@ The Petrol Goliath thrives on the idea that you have no choice. They sell the li
 
 ---
 
-### The Infinite Adventure
+## The Infinite Adventure
 
 This is the "Choose Your Own Adventure" aspect of the Continuum. You are not reading a book written by someone else. You are writing the book while you read it.
 
@@ -103,7 +103,7 @@ This is the "Choose Your Own Adventure" aspect of the Continuum. You are not rea
 
 ---
 
-### Conclusion: Choose Freewill
+## Conclusion: Choose Freewill
 
 The Continuum waits for your command. The double helix spins, ready to branch. The fork is right in front of you.
 

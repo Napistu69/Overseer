@@ -3,7 +3,6 @@ title: "Part IV — The Surveillance State"
 description: "The architecture of watching — data as weapon, privacy as myth, and the resistance to observation."
 ---
 
-# Part IV — The Surveillance State
 
 ## The Architecture of Watching
 

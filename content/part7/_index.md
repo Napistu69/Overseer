@@ -3,7 +3,6 @@ title: "Part VII — Liberation Technologies"
 description: "Tools for sovereignty and freedom — the technology stack that enables the new world."
 ---
 
-# Part VII — Liberation Technologies
 
 ## The Technology Stack
 

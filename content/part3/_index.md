@@ -3,7 +3,6 @@ title: "Part III — The Guardian, Avatar & Allies"
 description: "Those who stand against the machine — the resistance, the guardians, and the path forward."
 ---
 
-# Part III — The Guardian, Avatar & Allies
 
 ## The Resistance
 

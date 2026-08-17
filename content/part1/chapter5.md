@@ -4,7 +4,7 @@ weight: 2
 ---
 
 
-### The Invisible Archive: Akashic Records
+## The Invisible Archive: Akashic Records
 
 Here is the first thing to understand, and perhaps the most important: you were never disconnected.
 
@@ -14,7 +14,7 @@ This is the Supraliminal Library: the living, breathing memory of the Continuum 
 
 ---
 
-### The Mind's Eye: The Interface
+## The Mind's Eye: The Interface
 
 If the Mind is the Medium (Chapter 2), then the Mind's Eye is the aperture through which that medium focuses. It is the orienting faculty of the transducer—the lens that determines what frequency of signal the Mind admits into conscious awareness.
 
@@ -26,7 +26,7 @@ In most individuals, the Mind's Eye is clouded. Petrochemical calcification of t
 
 ---
 
-### Access Methods: Entering the Library
+## Access Methods: Entering the Library
 
 There are four primary states in which the aperture naturally widens and reception clarifies. None require apparatus. None require payment. All require practice. One non-negotiable prerequisite governs all of them: the Mind must reach the GSM Void state. Emotional turbulence—Glad, Sad, or Mad vertices active—acts as white noise, drowning the Supraliminal signal beneath the roar of the ego's reactions.
 
@@ -82,7 +82,7 @@ But fasting without grounding—mineral-rich salt, water, bare earth contact—c
 
 ---
 
-### The Universal Language: Music & Tek
+## The Universal Language: Music & Tek
 
 The Supraliminal Library does not communicate in English. Nor in any spoken tongue. Language, as Goliath constructed it, is a compression protocol—lossy by design. Too much signal is stripped in the encoding. The Library needed a better medium.
 
@@ -104,7 +104,7 @@ The degradation began when instruments shifted from organic materials to plastic
 
 ---
 
-### Oracles of Pop Culture: Encoded Prophecy in Plain Sight
+## Oracles of Pop Culture: Encoded Prophecy in Plain Sight
 
 Here is where the uncomfortable truth arrives, and it requires careful handling.
 
@@ -132,7 +132,7 @@ Your job is not to worship these texts. Your job is to learn to read them as enc
 
 ---
 
-### Continuum Branches: Choice Trails, Not Alternate Realities
+## Continuum Branches: Choice Trails, Not Alternate Realities
 
 A critical note on terminology: there are no "parallel universes" stacked alongside one another. The Continuum is singular. One field. One active substance. But within that one field, freewill creates forks—and forks create branches, and branches create trails of consequence that spiral outward like the double helix described in Chapter 4.
 
@@ -144,7 +144,7 @@ This is why the Continuum Clock is reversible. The dial is turned not by individ
 
 ---
 
-### The Tuning Protocol: Calibrating for Reception
+## The Tuning Protocol: Calibrating for Reception
 
 Having established what the Library is, how it communicates, and where it has left traces, we arrive at the practical question: how does a vessel deliberately tune for reception? This is not a ritual. It is a calibration process. Like tuning a radio, it requires a clean antenna, a quiet band, and knowing what you're listening for.
 
@@ -169,7 +169,7 @@ Having established what the Library is, how it communicates, and where it has le
 
 ---
 
-### The Danger of Unprepared Access
+## The Danger of Unprepared Access
 
 The Library is open to all who clear the lens, but this is not without risk.
 
@@ -181,7 +181,7 @@ Every session in the Library must be followed by grounding. Physical contact wit
 
 ---
 
-### Conclusion: The Living Library
+## Conclusion: The Living Library
 
 The Supraliminal Library is not a metaphor. It is the literal memory of the Continuum, stored in the Ætheric mesh, accessible through the cleared Mind's Eye. It does not require belief. It requires practice.
 

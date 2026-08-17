@@ -3,7 +3,7 @@ title: "The Continuum"
 weight: 1
 ---
 
-### The One Field
+## The One Field
 
 "All is Continuum, and Continuum is All." Space, time, fabric, and form are ultimately irrelevant as separate things. They are one field, one process. We have explained this to ourselves again and again through scattered symbols across cultures and sciences. This is the Yin-Yang forever folding into itself. This is quantum entanglement, particles mirroring each other beyond distance. This is the infinity loop and the eternal hourglass.
 
@@ -11,7 +11,7 @@ This is The Continuum. It is not merely a backdrop against which events happen; 
 
 ---
 
-### Memory is Time
+## Memory is Time
 
 In the common perception, time is a linear river flowing from past to future. This is a useful fiction for navigating the physical world, but it is not fundamental truth.
 
@@ -23,7 +23,7 @@ In the common perception, time is a linear river flowing from past to future. Th
 
 ---
 
-### As Above, So Below; As Within, So Without
+## As Above, So Below; As Within, So Without
 
 The macrocosm and the microcosm are reflections of the same underlying reality.
 
@@ -35,7 +35,7 @@ The macrocosm and the microcosm are reflections of the same underlying reality.
 
 ---
 
-### The Wormhole Analogy
+## The Wormhole Analogy
 
 Consider the worm. As it passes through matter, its body is also its tunnel. It is the worm and the wormhole at once. So too with the Continuum: it is the blueprint for all and the blueprint in all.
 
@@ -43,7 +43,7 @@ Because of this non-duality, some can see through the eyes of others. Some glimp
 
 ---
 
-### The Call to Remember
+## The Call to Remember
 
 We are not strangers in a foreign land. We are fragments of the Continuum experiencing itself through the lens of individual consciousness. The feeling of isolation, the ache of Dis-Ease, the sense of being trapped in a rigid system—these are signals that we have forgotten our true nature.
 
@@ -53,7 +53,7 @@ To remember this is the first step of the journey. To realize that the boundarie
 
 ---
 
-### The Path Forward
+## The Path Forward
 
 This Manifesto does not ask you to believe in a new dogma. It asks you to notice what your own body already knows through direct experience:
 

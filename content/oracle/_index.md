@@ -3,8 +3,6 @@ title: "The Oracle"
 description: "The TekTribe's collective memory and wisdom — search the Compendium and converse with Overseer Æ."
 ---
 
-# The Oracle
-
 ## The Akashic Record
 
 The Oracle is the **Akashic Record** of the TekTribe movement. It is the Collective Communal Conscience and Memory, where the memories of the deep past and the data of the emerging future converge.

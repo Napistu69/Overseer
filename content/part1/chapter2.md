@@ -4,7 +4,7 @@ weight: 2
 ---
 
 
-### The Substrate
+## The Substrate
 
 Beneath the solid matter of rocks, the liquid of water, and the gas of air lies a fourth state: Æther. It is not a mythical vapor, but the fundamental physical substrate of the Continuum.
 
@@ -16,7 +16,7 @@ Beneath the solid matter of rocks, the liquid of water, and the gas of air lies 
 
 ---
 
-### Bio-Electric Breath: The Human Engine
+## Bio-Electric Breath: The Human Engine
 
 The most direct interface between the biological vessel and the Ætheric mesh is the breath. Breathing is not merely an exchange of gases; it is an act of Ætheric manipulation.
 
@@ -30,7 +30,7 @@ The most direct interface between the biological vessel and the Ætheric mesh is
 
 ---
 
-### The Mind as Medium
+## The Mind as Medium
 
 If the body is the vessel and breath is the engine, then the Mind is the medium through which the Æther flows. It is the lens, the tuner, and the receiver.
 
@@ -44,7 +44,7 @@ If the body is the vessel and breath is the engine, then the Mind is the medium 
 
 ---
 
-### The Synthesis
+## The Synthesis
 
 When the Bio-Electric Breath charges the Æther, and the Mind clears the Medium, a powerful synergy occurs. The vessel becomes a conduit for the Continuum's infinite intelligence.
 

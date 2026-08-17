@@ -3,7 +3,6 @@ title: "Part IX — The Beast Below & Light Within"
 description: "Our collective awakening — the Beast Below rises, and the Light Within awakens."
 ---
 
-# Part IX — The Beast Below & Light Within
 
 ## The Beast Below
 

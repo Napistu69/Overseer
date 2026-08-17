@@ -1,9 +1,6 @@
 ---
 title: "Part I — Cosmology of the Continuum"
 description: "Before the vessel can be built, the waters must be understood. The geometry of control, the architecture of the Continuum, and the first stirrings of awakening."
-sequence: 1
-weight: 2
-status: LIVING ARCHIVE
 ---
 
 ## Before We Build, We See.

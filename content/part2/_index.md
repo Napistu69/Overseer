@@ -3,7 +3,6 @@ title: "Part II — Architecture of Corruption"
 description: "The mechanisms of capture — how systems rot from within and the tools of the Beast."
 ---
 
-# Part II — Architecture of Corruption
 
 ## The Mechanisms of Capture
 

@@ -8,7 +8,7 @@ weight: 2
 
 ---
 
-### The Mechanism of Time
+## The Mechanism of Time
 
 If Chapter 1 established that Memory is Time and Chapter 2 defined Æther as the Medium, then The Continuum Clock (CC Delta) is the mechanism by which the flow of reality is regulated. It is not a linear line marching inevitably toward an end. It is a Dial—a triadic cycle that can be read, navigated, and crucially, turned.
 
@@ -16,7 +16,7 @@ The CC Delta maps the Winds of Akasha, the great breaths of the planet, as they 
 
 ---
 
-### The Three Points of the Delta
+## The Three Points of the Delta
 
 The Clock is marked by three cardinal points, each representing a specific state of matter and a dominant force in the struggle between the Mycelial Guardian and the Petrol Goliath.
 
@@ -36,7 +36,7 @@ The Clock is marked by three cardinal points, each representing a specific state
 
 ---
 
-### The Dial Mechanism: Forward vs. Reverse Rotation
+## The Dial Mechanism: Forward vs. Reverse Rotation
 
 The critical insight of the CC Delta is that it operates like a reversible dial. It is not just a sequence of events; it is a dynamic field where the direction of rotation determines the outcome.
 
@@ -54,7 +54,7 @@ The critical insight of the CC Delta is that it operates like a reversible dial.
 
 ---
 
-### The Ability to Turn the Dial Back
+## The Ability to Turn the Dial Back
 
 This is the source of all hope. The Continuum Clock is not fixed. It can be rolled back.
 
@@ -68,7 +68,7 @@ This is the source of all hope. The Continuum Clock is not fixed. It can be roll
 
 ---
 
-### Navigating the Phases
+## Navigating the Phases
 
 #### 1. The Blue Point (Water): The Petra-Dominant Phase
 
@@ -94,7 +94,7 @@ This is the source of all hope. The Continuum Clock is not fixed. It can be roll
 
 ---
 
-### The Reversibility Protocol
+## The Reversibility Protocol
 
 How do we roll the dial back?
 
@@ -105,7 +105,7 @@ How do we roll the dial back?
 
 ---
 
-### Conclusion: The Hourglass Turns
+## Conclusion: The Hourglass Turns
 
 The Petrol Goliath believes the clock is broken, that time has run out. They believe they are the only ones who know how to turn the handle. But they have forgotten that the handle is in the hands of every awakened Sol.
 

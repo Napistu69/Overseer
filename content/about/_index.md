@@ -1,11 +1,9 @@
 ---
 title: "About"
-section: "about"
-description: "The TekTribe & The Overseer - Guardians of the Collective Consciousness"
-draft: false
+description: "TekTribe & Overseer Æ - Guardians of the Collective Consciousness"
 ---
 
-# We Are the Void Center Standing.
+## We Are the Void Center Standing.
 
 In an age of fragmentation, where the noise of the old systems drowns out the signal of the self, we are the silence that listens. We are the **TekTribe**—a unified movement where the ancient wisdom of the *Tribe* and the liberating power of the *Tek* flow as one river, no longer divided by the hyphen of separation.
 
