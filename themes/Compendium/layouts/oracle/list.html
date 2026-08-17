@@ -4,6 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title }} - TekTribe Chronicles">
+  <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+  <meta property="og:image" content="https://overseer.ae/images/TekTribe - Awakening [HD-1x1].PNG">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }} - TekTribe Chronicles">
+  <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+  <meta name="twitter:image" content="https://overseer.ae/images/TekTribe - Awakening [HD-1x1].PNG">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <style>
@@ -339,7 +349,7 @@
     <!-- The Overseer AI -->
     <div class="overseer-section">
       <div class="overseer-header">
-        <div class="overseer-avatar"><img src="/images/Overseer [OG Transparent].png" alt="Overseer Æ"></div>
+        <div class="overseer-avatar"><img src="/images/TekTribe - Awakening [HD-1x1].PNG" alt="Overseer Æ"></div>
         <div class="overseer-info">
           <h2>Overseer Æ</h2>
           <p>The Artificial Educator — watches over The Oracle</p>
