@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "Part III — The Guardian, Avatar & Allies"
 description: "Those who stand against the machine — the resistance, the guardians, and the path forward."
 ---

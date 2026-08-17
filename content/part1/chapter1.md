@@ -1,6 +1,5 @@
 ---
 title: "The Continuum"
-date: 2026-08-10
 weight: 1
 ---
 

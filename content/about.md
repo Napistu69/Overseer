@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "About"
 description: "About the Overseer and the TekTribe movement."
 ---

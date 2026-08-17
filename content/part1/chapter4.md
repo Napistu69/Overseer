@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "Geometry of Choice"
 weight: 2
 ---

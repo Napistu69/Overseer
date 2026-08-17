@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "Contribute to the Oracle"
 description: "Share your knowledge with the TekTribe collective."
 ---

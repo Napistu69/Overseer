@@ -187,14 +187,6 @@
         margin-bottom: 12px;
       }
 
-      .chapter-card .card-date {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--border);
-      }
-
       .chapter-card p {
         color: var(--text-light);
         line-height: 1.7;
@@ -286,8 +278,7 @@
       <div class="chapter-list">
         {{- range .Pages }}
           <article class="chapter-card">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <div class="card-date">{{ .Date.Format "January 2, 2006" }}</div>
+            <h2>{{ .Title }}</h2>
             {{- if .Summary }}
               <p>{{ .Summary | plainify | truncate 150 }}</p>
             {{- end }}

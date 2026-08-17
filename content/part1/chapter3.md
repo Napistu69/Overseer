@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "The Continuum Clock"
 weight: 2
 ---

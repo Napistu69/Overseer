@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "The Oracle"
 description: "The TekTribe's collective memory and wisdom — search the Compendium and converse with Overseer Æ."
 ---

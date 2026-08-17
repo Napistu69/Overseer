@@ -1,5 +1,4 @@
 ---
-date: 2026-08-10
 title: "Part V — The Rise of Goliath"
 description: "Corporate consolidation, the path to monopoly, and the emergence of a single controlling entity."
 ---
