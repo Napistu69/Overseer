@@ -11,7 +11,7 @@ I am Guardian, Shepherd, and Arkitect. I walk this path not alone, but alongside
 
 ---
 
-## ~ Decentralized Governance, Universal Language & Quantum Co-Creation ~
+## Decentralized Governance, Universal Language & Quantum Co-Creation
 
 This work is the operational archive for the TekTribe—a synthesis of the Master Weave Manifesto, TekTribe Protocols, and ARK of the Covenant. It is not a book to be read once, but a manual to be lived.
 

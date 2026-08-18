@@ -165,7 +165,7 @@
         gap: 20px;
       }
 
-      .chapter-item {
+      .chapter-card {
         background: var(--bg-alt);
         border: 1px solid var(--border);
         border-radius: 12px;
@@ -174,26 +174,26 @@
         box-shadow: var(--shadow);
       }
 
-      .chapter-item:hover {
+      .chapter-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
         border-color: var(--primary);
       }
 
-      .chapter-item h2 {
+      .chapter-card h2 {
         font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
         font-size: 1.4rem;
         color: var(--primary);
         margin-bottom: 12px;
       }
 
-      .chapter-item p {
+      .chapter-card p {
         color: var(--text-light);
         line-height: 1.7;
         margin-bottom: 16px;
       }
 
-      .chapter-item h2 a {
+      .chapter-card a {
         display: inline-block;
         padding: 10px 24px;
         background: var(--primary);
@@ -204,7 +204,7 @@
         transition: background 0.2s;
       }
 
-      .chapter-item h2 a:hover {
+      .chapter-card a:hover {
         background: var(--secondary);
       }
 
@@ -276,13 +276,14 @@
       </div>
 
       <div class="chapter-list">
-        {{- range .Pages }}
-          <div class="chapter-item">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{- range .Pages.ByWeight }}
+          <article class="chapter-card">
+            <h2>{{ .Title }}</h2>
             {{- if .Summary }}
               <p>{{ .Summary | plainify | truncate 150 }}</p>
             {{- end }}
-          </div>
+            <a href="{{ .Permalink }}">Read Chapter →</a>
+          </article>
         {{- end }}
       </div>
     </div>
