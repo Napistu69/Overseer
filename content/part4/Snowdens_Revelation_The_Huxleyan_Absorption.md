@@ -4,8 +4,6 @@ weight: 7
 description: "June 5-6, 2013—Verizon metadata orders revealed. PRISM program disclosed. The public processed the information, experienced brief concern, and returned to their feeds. The Huxleyan system absorbs awareness."
 ---
 
-# CHAPTER 27: SNOWDEN'S REVELATION — THE HUXLEYAN ABSORPTION
-## Part IV: The Security State
 
 ## PREAMBLE: JUNE 5-6, 2013
 
@@ -22,8 +20,6 @@ Snowden himself came forward voluntarily on June 9, 2013, identifying himself in
 His stated motive was clear and simple: to inform the public about what was being done in their name and what was being done against them. He wrote in a note accompanying the first set of documents: I understand that I will be made to suffer for my actions, but I will be satisfied if the federation of secret law, unequal pardon and irresistible executive powers that rule the world that I love are revealed even for an instant.
 
 He added: I don't want to live in a society that does these sort of things. I do not want to live in a world where everything I do and say is recorded.
-
----
 
 ## THE PUBLIC RESPONSE
 

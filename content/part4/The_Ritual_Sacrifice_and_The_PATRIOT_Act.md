@@ -4,11 +4,7 @@ weight: 2
 description: "September 11, 2001. Within 45 days, Congress passed the USA PATRIOT Act with virtually no debate. Section 215 authorized bulk collection under 'relevance' instead of probable cause."
 ---
 
-# TekTribe Chronicles: Part IV - The Surveillance State
 
-## The Ritual Sacrifice — 9/11 & The PATRIOT Act
-
----
 
 ## The Key Turned in the Lock
 

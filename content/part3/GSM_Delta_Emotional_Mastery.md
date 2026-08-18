@@ -5,9 +5,6 @@ description: "The Continuum Clock tracks time. The GSM Delta tracks state. Three
 ---
 
 
-## GSM Delta Æmotional Mastery
-
----
 
 ## Parallel Systems - Outer World Meets the Inner Readout
 

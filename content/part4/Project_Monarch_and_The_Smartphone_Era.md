@@ -4,8 +4,6 @@ weight: 5
 description: "January 9, 2007—Steve Jobs announces the iPhone. Not a phone that could compute, but a computer that could make calls. Twenty years brings us to 2027. The training is nearly complete."
 ---
 
-# CHAPTER 25: PROJECT MONARCH & THE SMARTPHONE ERA
-## Part IV: The Security State
 
 ## PREAMBLE: JANUARY 9, 2007
 
@@ -16,8 +14,6 @@ But examine what was actually presented that day. Jobs described a device that c
 The device shipped June 29, 2007, exclusively through AT&T. Within a year, the App Store launched with 500 applications. By 2024, over 1.5 billion iPhones had been sold. Apple became the world's most valuable company with a $3.9 trillion market valuation. The smartphone industry the iPhone created is now worth over $500 billion annually.
 
 But the story is not about revenue. The story is about what the device actually became in the hands of its users and what it did to them.
-
----
 
 ## THE 20-YEAR TRAINING CYCLE
 

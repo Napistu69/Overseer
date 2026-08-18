@@ -5,9 +5,6 @@ description: "The complete human schematic. The SoL, the Triadic Delta, the Feld
 ---
 
 
-## Avatar Operating System - SoL Reactor
-
----
 
 ## Revelation of the Vessel - The Identity Unlocked
 

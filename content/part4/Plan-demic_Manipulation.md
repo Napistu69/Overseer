@@ -4,16 +4,12 @@ weight: 9
 description: "Rockefeller Foundation's National Testing Action Plan appeared in April 2020 before widespread testing infrastructure existed. Everything connected. Every layer supported every other layer."
 ---
 
-# CHAPTER 30: PLAN-DEMIC MANIPULATION
-## Part IV: The Security State
 
 ## PREAMBLE: THE CATALYST THAT ACTIVATED THE ARCHITECTURE
 
 This brings us to the moment where the architecture reveals its hand most openly. The Planned-emic. Not necessarily a hoax in the sense of fabrication, but rather the strategic deployment of a biological event to accelerate infrastructure that had already been designed, tested, and waiting for activation.
 
 We begin with what exists in the public record. Documents that were published, proposals that were distributed, frameworks that were negotiated—all in plain view, yet largely unexamined by the population that would bear their consequences.
-
----
 
 ## THE PLANNING DOCUMENTS (PRE-EVENT)
 

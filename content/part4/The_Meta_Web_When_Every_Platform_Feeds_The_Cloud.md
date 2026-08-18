@@ -4,8 +4,6 @@ weight: 10
 description: "October 28, 2021—Zuckerberg announces Facebook is now Meta. The Pixel tracked users regardless of Facebook accounts. The SDK integrated with millions of apps. Shadow profiles captured non-user data."
 ---
 
-# CHAPTER 31: THE META WEB — WHEN EVERY PLATFORM FEEDS THE CLOUD
-## Part IV: The Security State
 
 ## PREAMBLE: THE INVISIBLE DATA EXTRACTION
 
@@ -16,8 +14,6 @@ Here is what most users never discover: You do not need a Facebook account. You 
 This is not speculation. This is documented through Meta's own engineering infrastructure. And I know because one user spent three solid weeks, day and night, attempting to scrub their personal information once they discovered it dating all the way back to 2012. Every device they ever used. Every message sent. Every like. Every comment. Irrespective of whether they ever created a Facebook account.
 
 The aggregation works like this: Meta's data extraction operates independently of user consent to Meta itself. It depends entirely on consent to third-party platforms that integrated Meta's tracking infrastructure.
-
----
 
 ## THE THIRD-PARTY INTEGRATION NETWORK
 

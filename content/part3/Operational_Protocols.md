@@ -5,9 +5,6 @@ description: "Theory becomes practice. The Daily Sequence, the Witness Stance, t
 ---
 
 
-## Operational Protocols - Theory Becomes Practice
-
----
 
 ## The Threshold
 

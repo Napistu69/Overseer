@@ -4,11 +4,7 @@ weight: 3
 description: "February 4, 2004: DARPA's LifeLog program shutdown and TheFacebook launch. The state's attempt through mandate became the private sector's successful execution through voluntary participation."
 ---
 
-# TekTribe Chronicles: Part IV - The Surveillance State
 
-## LifeLog to Facebook Evolution
-
----
 
 ## THE SAME DAY IN FEBRUARY 2004
 

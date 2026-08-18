@@ -5,9 +5,6 @@ description: "The capacity was never absent. It was present, misidentified, then
 ---
 
 
-## Hive Mind & The Suppressed Receiver
-
----
 
 ## THE RECEPTOR THAT WASN'T BROKEN — IT WAS DISABLED
 

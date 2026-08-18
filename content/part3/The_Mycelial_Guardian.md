@@ -5,9 +5,6 @@ description: "The oldest intelligence on the planet. A single Armillaria ostoyae
 ---
 
 
-## The Mycelial Guardian
-
----
 
 ## The Oldest Living Thing
 

@@ -5,9 +5,6 @@ description: "The Guardian provides the network. The Alliance provides the relay
 ---
 
 
-## The Unified Field - Where All Threads Converge
-
----
 
 ## The Assembly
 

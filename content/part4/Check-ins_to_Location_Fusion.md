@@ -4,8 +4,6 @@ weight: 4
 description: "Facebook Places launched in 2010. Friends could tag you when checking in somewhere together, tracking your location without explicit consent. Background GPS tracking began around 2014."
 ---
 
-# CHAPTER 24: CHECK-INS TO LOCATION FUSION
-## Part IV: The Security State
 
 ## PREAMBLE: FROM STATIC PROFILE TO DYNAMIC MOVEMENT MAP
 
@@ -14,8 +12,6 @@ Facebook Places launched in August 2010, introducing the check-in feature that a
 Privacy advocates immediately flagged the problem. The service could reveal users' whereabouts to their entire Facebook network. Fears emerged about non-authorized check-ins that could be used to track individuals without explicit consent. The design created a situation where one person's participation could expose another person's location history without their knowledge or permission.
 
 This represented a significant escalation from the static profile data Facebook collected initially. Check-ins weren't just demographic information—they were temporal movement records. Your home location, workplace, social gatherings, medical appointments, religious services, political rallies—all became searchable metadata points tied to your identity.
-
----
 
 ## BACKGROUND GPS TRACKING (2014 ONWARDS)
 

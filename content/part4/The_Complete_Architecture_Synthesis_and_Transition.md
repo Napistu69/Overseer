@@ -4,8 +4,6 @@ weight: 11
 description: "Ten layers of infrastructure. Thirty years of evolution. This is Huxley, not Orwell. People are controlled by inflicting pleasure. Those born after Y2K have never known a life outside institutional tracking."
 ---
 
-# CHAPTER 32: THE COMPLETE ARCHITECTURE — SYNTHESIS AND TRANSITION
-## Part IV: The Security State
 
 ## PREAMBLE: THE FULL MAP
 
@@ -14,8 +12,6 @@ We have traced the surveillance infrastructure from its origins to its current s
 This is the final chapter of Part IV: The Security State. It serves as both synthesis of what has come before and transition toward what comes next: Part V, The Adversary Anatomy, where we turn our gaze to the entities that control and benefit from this infrastructure.
 
 But first, we must understand what we have built together across these chapters.
-
----
 
 ## THE TEN-LAYER INFRASTRUCTURE
 

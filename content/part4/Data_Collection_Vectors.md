@@ -4,8 +4,6 @@ weight: 6
 description: "By 2012, Flurry Analytics alone was embedded in approximately one million applications, collecting data from two billion smartphones worldwide. The surveillance was happening at the SDK level."
 ---
 
-# CHAPTER 26: DATA COLLECTION VECTORS
-## Part IV: The Security State
 
 ## PREAMBLE: THE INFRASTRUCTURE Hiding INSIDE THE INFRASTRUCTURE
 
@@ -14,8 +12,6 @@ The App Store launched in July 2008 with 500 applications. By 2012, Flurry Analy
 To understand what happened, you have to understand what a Software Development Kit actually is. When a developer builds an app, they rarely write every component from scratch. They import pre-packaged code libraries called SDKs that handle specific functions: displaying advertisements, tracking crashes, measuring user engagement, processing payments, integrating social login. These SDKs are written by third-party companies and embedded directly into the app's code. The user downloads the app from the App Store or Google Play. They see the app's interface and functionality. They never see the SDKs running underneath.
 
 Each SDK operates as a silent data collection module. When you open an app, the analytics SDK records that you opened it. When you tap a button, it records the tap. When you scroll, it records the scroll depth. When you pause on a screen, it records the dwell time. When you close the app, it records the session duration. All of this data is transmitted to the SDK provider's servers, not the app developer's servers. The app developer may only see aggregated summary statistics. The SDK provider sees the raw behavioral data.
-
----
 
 ## THE UDID AND IDENTIFIER ECOSYSTEM
 

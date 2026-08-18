@@ -5,9 +5,6 @@ description: "Intelligence does not require brains. Mycelial filaments transmit 
 ---
 
 
-## Fungal Intelligence & The Living Network
-
----
 
 ## Distributed Knowledge - The Non-Neural Mind
 
