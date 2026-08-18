@@ -1,8 +1,7 @@
----
-title: "Geometry of Choice"
-weight: 2
----
+## Geometry of Choice
 
+
+---
 
 ## The Architecture of Reality
 

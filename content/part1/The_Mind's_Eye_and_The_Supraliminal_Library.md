@@ -1,8 +1,7 @@
----
-title: "The Mind's Eye & The Supraliminal Library"
-weight: 2
----
+## Mind's Eye & Supraliminal Library
 
+
+---
 
 ## The Invisible Archive: Akashic Records
 

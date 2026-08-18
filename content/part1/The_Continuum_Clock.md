@@ -1,7 +1,4 @@
----
-title: "The Continuum Clock"
-weight: 2
----
+## The Continuum Clock
 
 
 ## The Triadic Dial & The Reversible Cycle
