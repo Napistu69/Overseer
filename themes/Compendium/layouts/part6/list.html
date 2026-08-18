@@ -271,15 +271,13 @@
       </header>
 
       <div class="part-intro">
-        <h2>{{ .Title }}</h2>
         {{ .Content }}
       </div>
 
       <div class="thread-list">
         {{- range .Pages }}
           <article class="thread-card">
-            <h2>{{ .Title }}</h2>
-            {{- if .Description }}
+                {{- if .Description }}
               <p>{{ .Description }}</p>
             {{- end }}
             <a href="{{ .Permalink }}">Read Thread →</a>

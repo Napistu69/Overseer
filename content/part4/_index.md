@@ -5,7 +5,6 @@ sequence: 4
 status: LIVING ARCHIVE
 ---
 
-# Part IV — The Surveillance State
 
 ## We Map the Cage Before We Leave It.
 
