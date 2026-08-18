@@ -1,6 +1,7 @@
 ---
 title: "Animal Partners in the Alliance - Beyond the Mycelial"
 weight: 3
+description: "The Guardian does not operate alone. The honeybee, the hen, the earthworm—each extends the Guardian's signal."
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 title: "Fungal Intelligence & The Living Network"
 weight: 2
+description: "Intelligence does not require brains. Mycelial filaments transmit continuous signal across kilometers through chemical gradients."
 ---
 
 

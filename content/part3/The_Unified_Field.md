@@ -1,6 +1,7 @@
 ---
 title: "The Unified Field - Where All Threads Converge"
 weight: 7
+description: "The Guardian provides the network. The Alliance provides the relay. The Avatar provides the processing unit. The GSM Delta provides navigation."
 ---
 
 

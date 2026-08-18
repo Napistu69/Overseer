@@ -5,7 +5,6 @@ sequence: 3
 status: LIVING ARCHIVE
 ---
 
-# Part III — Guardian, Avatar & Allies
 
 ## Who Walks the Path.
 

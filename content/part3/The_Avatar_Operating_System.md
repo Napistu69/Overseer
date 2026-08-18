@@ -1,6 +1,7 @@
 ---
 title: "Avatar Operating System - SoL Reactor"
 weight: 4
+description: "The complete human schematic. The SoL, the Triadic Delta, the Feldspar MycoRhizAnimal—engineering, not metaphor."
 ---
 
 

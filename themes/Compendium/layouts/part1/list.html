@@ -159,13 +159,13 @@
         margin-bottom: 12px;
       }
 
-      .chapter-list {
+      .thread-list {
         display: flex;
         flex-direction: column;
         gap: 20px;
       }
 
-      .chapter-card {
+      .thread-card {
         background: var(--bg-alt);
         border: 1px solid var(--border);
         border-radius: 12px;
@@ -174,26 +174,26 @@
         box-shadow: var(--shadow);
       }
 
-      .chapter-card:hover {
+      .thread-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(0,0,0,0.1);
         border-color: var(--primary);
       }
 
-      .chapter-card h2 {
+      .thread-card h2 {
         font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
         font-size: 1.4rem;
         color: var(--primary);
         margin-bottom: 12px;
       }
 
-      .chapter-card p {
+      .thread-card p {
         color: var(--text-light);
         line-height: 1.7;
         margin-bottom: 16px;
       }
 
-      .chapter-card a {
+      .thread-card a {
         display: inline-block;
         padding: 10px 24px;
         background: var(--primary);
@@ -204,7 +204,7 @@
         transition: background 0.2s;
       }
 
-      .chapter-card a:hover {
+      .thread-card a:hover {
         background: var(--secondary);
       }
 
@@ -274,14 +274,14 @@
               {{ .Content }}
       </div>
 
-      <div class="chapter-list">
+      <div class="thread-list">
         {{- range .Pages.ByWeight }}
-          <article class="chapter-card">
+          <article class="thread-card">
             <h2>{{ .Title }}</h2>
             {{- if .Description }}
               <p>{{ .Description }}</p>
             {{- end }}
-            <a href="{{ .Permalink }}">Read Chapter →</a>
+            <a href="{{ .Permalink }}">Read Thread →</a>
           </article>
         {{- end }}
       </div>

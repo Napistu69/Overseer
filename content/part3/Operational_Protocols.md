@@ -1,6 +1,7 @@
 ---
 title: "Operational Protocols - Theory Becomes Practice"
 weight: 5
+description: "Theory becomes practice. The Daily Sequence, the Witness Stance, the Sovereignty Test—the Avatar Operating System in motion."
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 title: "GSM Delta Æmotional Mastery"
 weight: 6
+description: "The Continuum Clock tracks time. The GSM Delta tracks state. Three vertices: Glad, Sad, Mad. Between them: the Void Center."
 ---
 
 

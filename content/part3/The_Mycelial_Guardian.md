@@ -1,6 +1,7 @@
 ---
 title: "The Mycelial Guardian"
 weight: 1
+description: "The oldest intelligence on the planet. A single Armillaria ostoyae spreads across 2,384 acres—between 2,400 and 8,650 years old."
 ---
 
 
