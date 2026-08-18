@@ -1,6 +1,7 @@
 ---
 title: "The Cookie at the Turn of the Century"
 weight: 1
+description: "In 1994, Lou Montulli invented the web cookie for shopping cart persistence. By 1997-2000, DoubleClick pioneered third-party tracking across unrelated publisher sites."
 ---
 
 # TekTribe Chronicles: Part IV - The Surveillance State

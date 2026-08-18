@@ -277,7 +277,8 @@
       <div class="thread-list">
         {{- range .Pages.ByWeight }}
           <article class="thread-card">
-                {{- if .Description }}
+            <h2>{{ .Title }}</h2>
+            {{- if .Description }}
               <p>{{ .Description }}</p>
             {{- end }}
             <a href="{{ .Permalink }}">Read Thread →</a>

@@ -1,6 +1,7 @@
 ---
 title: "Part IV: The Security State"
 weight: 8
+description: "Where collection becomes shaping. YouTube optimized for watch-time. TikTok compressed the dopamine cycle to seconds. What you see, hear, buy, believe—all determined by algorithms."
 ---
 
 # CHAPTER 29: RECOMMENDATION ENGINE APOTHEOSIS

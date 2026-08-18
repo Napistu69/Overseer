@@ -1,6 +1,7 @@
 ---
 title: "Part IV: The Security State"
 weight: 5
+description: "January 9, 2007—Steve Jobs announces the iPhone. Not a phone that could compute, but a computer that could make calls. Twenty years brings us to 2027. The training is nearly complete."
 ---
 
 # CHAPTER 25: PROJECT MONARCH & THE SMARTPHONE ERA

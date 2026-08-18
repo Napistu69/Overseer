@@ -1,6 +1,7 @@
 ---
 title: "Part IV: The Security State"
 weight: 9
+description: "Rockefeller Foundation's National Testing Action Plan appeared in April 2020 before widespread testing infrastructure existed. Everything connected. Every layer supported every other layer."
 ---
 
 # CHAPTER 30: PLAN-DEMIC MANIPULATION
