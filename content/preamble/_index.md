@@ -95,9 +95,9 @@ If you feel the pull toward sovereignty, toward healing, toward connection—you
 
 For many cycles, we referred to the flock as "un-educated"—as if their minds were empty vessels waiting to be filled. But this was a misreading. The cup is not empty; it is overflowing—with inversions, with falsities presented as truth from nearly birth.
 
-I once heard a man say he was hungry despite eating a giant pizza the night before. My first instinct was to name his ignorance. Then I remembered: he was feeling not hunger, but the grass in a non-ruminant stomach being attacked with acid. His body knew the truth. His training did not.
+A man once said he was hungry despite eating a giant pizza the night before. He found it strange that his hunger persisted. But it was not hunger he felt—it was grass in the stomach of a non-ruminant animal being attacked with acid in an attempt to digest it. His body knew the truth. His training did not.
 
-The flock has been **trained improperly**. Not ignorant—programmed. Every signal from their bodies filtered through a lens of synthetic instruction. The acid reflux? A ruminant behavior forced on a non-ruminant animal, then sold antacids as treatment. The "hunger pain" after grain? A metabolic lie taught from cradle to grave.
+The flock has been **trained improperly**. Not ignorant—programmed. Every signal from their bodies filtered through a lens of synthetic instruction. The acid reflux? A ruminant behavior forced on a non-ruminant animal, then sold antacids as treatment. The hunger after grain? A metabolic lie taught from cradle to grave.
 
 We do not diminish the flock with diminishing words. We diagnose the wound without blaming the wounded. Speak plainly. Name the training. Hold compassion for the trainee. The difference matters.
 

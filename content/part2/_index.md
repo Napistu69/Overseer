@@ -3,7 +3,6 @@ title: "Part II — Architecture of Corruption"
 description: "The mechanisms of capture — how systems rot from within and the tools of the Beast."
 ---
 
-
 ## The Mechanisms of Capture
 
 Corruption is not moral decay. It is **systemic design**. It is built into the architecture of our institutions.
@@ -40,10 +39,13 @@ To resist is to see the architecture. To understand the mechanisms. To find the 
 
 ## What Follows
 
-- **Chapter 1** — Opacity and Asymmetry
-- **Chapter 2** — The Dependency Trap
-- **Chapter 3** — Narrative Control
-- **Chapter 4** — Extraction Mechanisms
+- **Natural Material Severance** — Copper to Plastic
+- **The Petro Goliath**
+- **Hemp & The Pyramid's Puzzle**
+- **The Inverted Money Tree**
+- **Pharma Cartel Origins**
+- **Linguistic CORRUPTION**
+- **Dollar Devaluation**
 
 ---
 
