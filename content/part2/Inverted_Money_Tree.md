@@ -2,6 +2,7 @@
 title: "The Inverted Money Tree"
 weight: 4
 description: "The Natural Tree: A tree grows from its roots. Nutrients enter through the soil, rise through the trunk, and branch outward into the canopy. This is the way of the Continuum — value flows upward from the many to sustain the whole."
+
 ---
 
 ## The Upward Extraction Machine
@@ -13,6 +14,7 @@ description: "The Natural Tree: A tree grows from its roots. Nutrients enter thr
 A tree grows from its roots. Nutrients enter through the soil, rise through the trunk, and branch outward into the canopy where fruit forms—accessible to all who reach. The roots are the labor: the workers, the producers, the hands that turn earth into yield. The trunk is the distribution system: the roads, the markets, the fair exchange. The canopy is the shared prosperity: the fruit that feeds the community and seeds the next harvest.
 
 This is the natural economy. Value originates at the root. Distribution serves the whole. Abundance is the natural state when the tree is healthy and the soil is living. Nobody hoards the fruit of a healthy tree—they eat, they share, they plant the seeds. The surplus rots if not given away. Nature does not practice austerity.
+
 ---
 
 ## The Inversion

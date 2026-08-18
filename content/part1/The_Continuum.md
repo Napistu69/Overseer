@@ -2,6 +2,7 @@
 title: "The Continuum"
 weight: 1
 description: "The foundational space — not a place, but a relational field. The connective tissue between Data, Algorithm, Behavior, and Compliance."
+
 ---
 
 ## The One Field
@@ -21,6 +22,7 @@ In the common perception, time is a linear river flowing from past to future. Th
 - **The Eternal Now:** Fundamentally, there is no past and no future. Only the Eternal Now—the pulse of the Continuum itself. The past and future coexist simultaneously in the continuum, accessible to those who know how to listen.
 
 - **Dilation and Contraction:** Because time is a function of memory, it dilates during fasting visions, warps in moments of déjà vu, and stretches within states of Dis-Ease. It contracts in moments of pure presence. When consciousness operates in the Eternal Now rather than linear anxiety loops, decision-making clarity improves dramatically.
+
 ---
 
 ## As Above, So Below; As Within, So Without

@@ -2,6 +2,7 @@
 title: "Linguistic Corruption - The Weaponization of Words"
 weight: 6
 description: "The most insidious layer of the Goliath's corruption is not material. It is not economic. It is not even chemical. It is linguistic."
+
 ---
 
 ## The Deepest Architecture
@@ -9,6 +10,7 @@ description: "The most insidious layer of the Goliath's corruption is not materi
 The most insidious layer of the Goliath's corruption is not material. It is not economic. It is not even chemical. It is linguistic. Before the plastic, before the petrodollar, before the pharmaceutical injection, there was a simpler act: the redefinition of a word.
 
 Control the language and you control the parameters of thought. Control the parameters of thought and you control the range of possible action. The Hydra does not need to imprison a population that has voluntarily reduced its own vocabulary to the dimensions of its cage.
+
 ---
 
 ## Dis-Ease: The Original Meaning
@@ -18,6 +20,7 @@ The word "Dis-Ease" originally signified something simple and non-threatening: a
 Consider the structure of the word itself. "Dis-" a prefix indicating absence or reversal. "Ease." The absence of ease. When the body lacks ease, the answer is to restore ease—not to declare war on the body. Dis-Ease was understood as a signal, not an identity. It was a dashboard indicator, not a diagnosis. The vessel was telling its operator that something in the environment, the diet, or the emotional state required adjustment. Listen, adjust, restore. The Dis-Ease passes. The system recalibrates.
 
 This understanding persisted across cultures for millennia. Ayurveda describes dosha imbalance—correctable through diet, herbs, and lifestyle. Traditional Chinese Medicine describes qi stagnation—correctable through acupuncture, movement, and breath. Indigenous traditions across continents recognize dis-harmony with the land or the community as the root of physical symptoms. The common thread: Dis-Ease is a message from the system, not an enemy within it.
+
 ---
 
 ## The Pronunciation Shift: From State to Sentence

@@ -2,6 +2,7 @@
 title: "The Petro-Goliath"
 weight: 2
 description: "Picture a desert. The surface appears empty — rippled dunes, silent wind, the illusion of barren peace. But beneath the sand, something is moving."
+
 ---
 
 ## The Beast Beneath the Sand
@@ -9,6 +10,7 @@ description: "Picture a desert. The surface appears empty — rippled dunes, sil
 Picture a desert. The surface appears empty—rippled dunes, silent wind, the illusion of barren peace. But beneath the sand, something is moving. A massive serpentine body tunnels through the substrata, its spine a pipeline of petroleum and capital, its nervous system a fiber-optic web of financial routing. And from this buried body, necks emerge through the surface at intervals, each neck rising into a head that wears a different face: BP. Walmart. The Federal Reserve. Each mouth spews a different flavor of synthetic product—fuel, plastic goods, flat currency—but the body beneath is one organism.
 
 This is the G.O.L.I.A.T.H.: Global Oil Leveraging Industrial Armaments & Technology Hydra. It is not a conspiracy theory. It is a structural description of how power consolidates, regenerates, and defends itself when a head is severed.
+
 ---
 
 ## The Hydra Principle: Why Killing a Head Strengthens the Body
@@ -22,6 +24,7 @@ Here is the mechanism. A corporation—a head—generates capital by extracting 
 But the capital does not disappear. It has already been routed. The profits generated over decades of extraction sit in holding companies, offshore accounts, investment vehicles, and parent portfolios insulated from the head's legal liability. When the head falls, those funds reabsorb into the body—the financial core that spawned the head in the first place. And from that body, nourished by the reabsorbed capital, a new neck begins to grow—not in the old territory, but in the emerging space where the next frontier of extraction has already been identified.
 
 The Hydra does not retreat. It molts.
+
 ---
 
 ## Case Study: The Music Industry Molt

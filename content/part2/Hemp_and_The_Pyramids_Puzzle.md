@@ -2,6 +2,7 @@
 title: "Hemp & The Pyramid's Puzzle"
 weight: 3
 description: "Hermes Trismegistus — Hermes the Thrice Great — left a clue buried in the oldest architecture on earth. He said: solve the pyramid's puzzle, and you will understand the petro plot."
+
 ---
 
 ## The Discovery Mechanism

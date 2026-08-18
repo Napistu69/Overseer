@@ -2,6 +2,7 @@
 title: "The Continuum Clock"
 weight: 3
 description: "The timing layer. The Clock is not a device that measures hours — it is the rhythm at which the Continuum operates."
+
 ---
 
 ## The Triadic Dial & The Reversible Cycle
@@ -13,6 +14,7 @@ description: "The timing layer. The Clock is not a device that measures hours �
 If Chapter 1 established that Memory is Time and Chapter 2 defined Æther as the Medium, then The Continuum Clock (CC Delta) is the mechanism by which the flow of reality is regulated. It is not a linear line marching inevitably toward an end. It is a Dial—a triadic cycle that can be read, navigated, and crucially, turned.
 
 The CC Delta maps the Winds of Akasha, the great breaths of the planet, as they rotate through three distinct elemental phases. Understanding this clock is essential for temporal sovereignty. It allows the Tribe to recognize where they stand, what forces are dominant, and how to manipulate the dial to accelerate healing or avoid destruction.
+
 ---
 
 ## The Three Points of the Delta

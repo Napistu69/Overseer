@@ -2,6 +2,7 @@
 title: "Geometry of Choice"
 weight: 4
 description: "The structural layer. Choice within the Continuum is not free — it is shaped. The geometry determines which paths appear open."
+
 ---
 
 ## The Architecture of Reality
@@ -20,6 +21,7 @@ In this framework, there are only two directions at any fork in the road:
 2. **Path B (Parasitic/Goliath):** The choice that aligns with extraction, corruption, and the reverse rotation of the clock.
 
 There is no neutral ground. Even the decision not to decide is a decision—and in the Continuum, passivity defaults to Path B (the Parasitic). As Neil Peart encoded in "Freewill": "If you choose not to decide, you still have made a choice." To remain inert is to let the current sweep you downstream. To choose Freewill is to grab the oar.
+
 ---
 
 ## The Double Helix of Time

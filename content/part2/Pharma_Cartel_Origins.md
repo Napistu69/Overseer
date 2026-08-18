@@ -2,6 +2,7 @@
 title: "Pharma Cartel Origins - The Profit-from-Poison Paradigm"
 weight: 5
 description: "The modern medical-industrial complex sells itself as a healing institution. Hospitals heal, doctors cure, insurance protects. This is the narrative. The reality is inversion."
+
 ---
 
 ## The Curative Fallacy
@@ -13,6 +14,7 @@ This assumption is false.
 The primary goal of the Pharmaceutical Cartel is revenue sustainability. Wellness terminates revenue. A cured patient stops paying. Therefore, the optimal business model is not cure—it is management. Chronic disease management generates lifetime revenue streams. Acute emergency care generates high-volume spikes. Preventative maintenance—true healing—is an expense to be minimized.
 
 This inversion did not begin with good intentions gone wrong. It began with deliberate architecture. To understand why the current system resists cure, you must trace the roots of the corporation that built it. And those roots go deeper than the twentieth century. They go into the dark soil of the Third Reich, where science was weaponized not for life, but for industry efficiency.
+
 ---
 
 ## The German Pedigree: Bayer, Pfizer, and IG Farben
@@ -26,6 +28,7 @@ The core players in the modern petro-medical landscape were born in Germany duri
 - **IG Farben (1925–1945):** These companies (along with BASF and Hoechst) merged into the Interests Group of the Chemical Industries known as IG Farben. At its peak, it was the fourth-largest company in the world. During the Nazi era, IG Farben manufactured the poison gas used in concentration camps (Zyklon B) while simultaneously experimenting on prisoners to develop chemical treatments for their own soldiers.
 
 The connection between medicine and death was not accidental. It was structural. The same facilities that synthesized therapeutic compounds synthesized nerve agents. The same engineers who designed drug delivery systems designed gas chambers. There was no distinction in the technology—only in the target.
+
 ---
 
 ## The Post-War Transplant
