@@ -276,7 +276,7 @@
       </div>
 
       <div class="chapter-list">
-        {{- range .Pages }}
+        {{- range .Pages.ByWeight }}
           <article class="chapter-card">
             <h2>{{ .Title }}</h2>
             {{- if .Description }}
