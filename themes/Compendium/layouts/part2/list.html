@@ -278,11 +278,10 @@
       <div class="chapter-list">
         {{- range .Pages }}
           <div class="chapter-item">
-            <h2>{{ .Title }}</h2>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{- if .Summary }}
               <p>{{ .Summary | plainify | truncate 150 }}</p>
             {{- end }}
-            <a href="{{ .Permalink }}">Read Chapter →</a>
           </div>
         {{- end }}
       </div>
