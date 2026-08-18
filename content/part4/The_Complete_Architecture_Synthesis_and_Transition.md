@@ -1,5 +1,5 @@
 ---
-title: "Part IV: The Security State"
+title: "The Complete Architecture — Synthesis and Transition"
 weight: 11
 description: "Ten layers of infrastructure. Thirty years of evolution. This is Huxley, not Orwell. People are controlled by inflicting pleasure. Those born after Y2K have never known a life outside institutional tracking."
 ---

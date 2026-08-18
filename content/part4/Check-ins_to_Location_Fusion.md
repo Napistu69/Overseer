@@ -1,5 +1,5 @@
 ---
-title: "Part IV: The Security State"
+title: "Check-ins to Location Fusion"
 weight: 4
 description: "Facebook Places launched in 2010. Friends could tag you when checking in somewhere together, tracking your location without explicit consent. Background GPS tracking began around 2014."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Part IV: The Security State"
+title: "The Meta Web — When Every Platform Feeds The Cloud"
 weight: 10
 description: "October 28, 2021—Zuckerberg announces Facebook is now Meta. The Pixel tracked users regardless of Facebook accounts. The SDK integrated with millions of apps. Shadow profiles captured non-user data."
 ---

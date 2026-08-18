@@ -1,5 +1,5 @@
 ---
-title: "Part IV: The Security State"
+title: "Snowden's Revelation — The Huxleyan Absorption"
 weight: 7
 description: "June 5-6, 2013—Verizon metadata orders revealed. PRISM program disclosed. The public processed the information, experienced brief concern, and returned to their feeds. The Huxleyan system absorbs awareness."
 ---

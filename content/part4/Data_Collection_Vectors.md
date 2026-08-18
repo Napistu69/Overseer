@@ -1,5 +1,5 @@
 ---
-title: "Part IV: The Security State"
+title: "Data Collection Vectors"
 weight: 6
 description: "By 2012, Flurry Analytics alone was embedded in approximately one million applications, collecting data from two billion smartphones worldwide. The surveillance was happening at the SDK level."
 ---
