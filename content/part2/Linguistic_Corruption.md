@@ -3,7 +3,6 @@ title: "Linguistic Corruption - The Weaponization of Words"
 weight: 6
 ---
 
-## Linguistic Corruption - The Weaponization of Words
 
 ---
 

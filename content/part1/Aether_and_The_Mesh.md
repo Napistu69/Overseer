@@ -3,7 +3,6 @@ title: "Æther & The Mesh"
 weight: 2
 ---
 
-## Æther & The Mesh
 
 
 ---

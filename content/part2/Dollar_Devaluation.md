@@ -3,7 +3,6 @@ title: "Dollar Devaluation"
 weight: 7
 ---
 
-## Dollar Devaluation
 
 
 ---

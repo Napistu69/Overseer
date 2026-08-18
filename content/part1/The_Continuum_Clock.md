@@ -3,7 +3,6 @@ title: "The Continuum Clock"
 weight: 3
 ---
 
-## The Continuum Clock
 
 
 ## The Triadic Dial & The Reversible Cycle

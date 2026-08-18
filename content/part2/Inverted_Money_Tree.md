@@ -3,7 +3,6 @@ title: "The Inverted Money Tree"
 weight: 4
 ---
 
-## The Inverted Money Tree
 
 
 ## The Upward Extraction Machine

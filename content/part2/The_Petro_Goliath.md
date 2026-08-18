@@ -3,7 +3,6 @@ title: "The Petro-Goliath"
 weight: 2
 ---
 
-## The Petro-Goliath
 
 ---
 

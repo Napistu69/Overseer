@@ -3,7 +3,6 @@ title: "Hemp & The Pyramid's Puzzle"
 weight: 3
 ---
 
-## Hemp & The Pyramid's Puzzle
 
 
 ---

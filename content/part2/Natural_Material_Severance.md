@@ -3,7 +3,6 @@ title: "Copper to Plastic — Natural Material Severance"
 weight: 1
 ---
 
-## Copper to Plastic — Natural Material Severance
 
 ---
 

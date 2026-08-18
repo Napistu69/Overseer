@@ -3,7 +3,6 @@ title: "Mind's Eye & Supraliminal Library"
 weight: 5
 ---
 
-## Mind's Eye & Supraliminal Library
 
 
 ---

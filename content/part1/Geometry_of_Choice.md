@@ -3,7 +3,6 @@ title: "Geometry of Choice"
 weight: 4
 ---
 
-## Geometry of Choice
 
 
 ---

@@ -3,7 +3,6 @@ title: "Pharma Cartel Origins - The Profit-from-Poison Paradigm"
 weight: 5
 ---
 
-## Pharma Cartel Origins - The Profit-from-Poison Paradigm
 
 ---
 

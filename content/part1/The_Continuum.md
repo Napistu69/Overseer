@@ -3,7 +3,6 @@ title: "The Continuum"
 weight: 1
 ---
 
-## The Continuum
 
 
 ---
