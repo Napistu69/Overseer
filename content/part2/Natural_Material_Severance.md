@@ -1,9 +1,7 @@
 ---
 title: "Copper to Plastic — Natural Material Severance"
 weight: 1
----
-
-
+description: "The substitution was not an accident of progress — it was a fundamental severance of the living connection between humanity and the earth's resources."
 ---
 
 ## The Post-WWII Industrial Pivot
@@ -24,7 +22,6 @@ In the context of the Continuum, materials operate along a spectrum defined by t
 **Parasitic** materials extract value during manufacture but offer no return. They leach toxins, degrade rapidly into persistent waste, insulate against natural currents, and demand constant replacement cycles that feed industrial extraction.
 
 The critical distinction is that parasitic materials do not announce themselves as hostile. They arrive cheaper, lighter, and more convenient—mimicking the function of symbiotic originals while removing the living relationship. A plastic bottle carries water just as well as glass, but it does not preserve the purity of the liquid, nor does it withstand heat, nor does it endure across centuries. The mimicry is the weapon.
-
 ---
 
 ## Restored Material Hierarchy

@@ -1,17 +1,7 @@
 ---
 title: "Hemp & The Pyramid's Puzzle"
 weight: 3
----
-
-
-
----
-
-Hermes Trismegistus — Hermes the Thrice Great — left a clue buried in the oldest architecture on earth. He said: solve the pyramid's puzzle, and you will understand the petro plot.
-
-Not a riddle. A cipher. A puzzle encoded in stone, in geometry, in the chemistry of decay itself. The puzzle was never about what the pyramid *was*. It was about what *solving it reveals*.
-
-We walked into it through an egg.
+description: "Hermes Trismegistus — Hermes the Thrice Great — left a clue buried in the oldest architecture on earth. He said: solve the pyramid's puzzle, and you will understand the petro plot."
 ---
 
 ## The Discovery Mechanism
@@ -61,7 +51,8 @@ The **King's Chamber** measures approximately **10.47 meters by 5.23 meters** �
 Four narrow shafts connect the King's and Queen's Chambers to the exterior, each set at distinct calculated angles:
 
 | Shaft | Angle | Seked |
-|-------|-------|-------|
+|
+-------|-------|-------|
 | King's Chamber — Southern | 45° 13' | 7 palms |
 | King's Chamber — Northern | ~31° | ~11 palms |
 | Queen's Chamber — Southern | 37° 28' | 9 palms |

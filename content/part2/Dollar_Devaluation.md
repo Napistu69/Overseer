@@ -1,10 +1,7 @@
 ---
 title: "Dollar Devaluation"
 weight: 7
----
-
-
-
+description: "The greatest trick the financial Hydra ever pulled was convincing the world that the dollar was a stable unit of value."
 ---
 
 ## The Wealth Illusion & The Arithmetic of Theft
@@ -23,7 +20,6 @@ The U.S. dollar has lost approximately \(96\%\) of its purchasing power since th
 The gaslighting operates through a single linguistic inversion: the word "inflation." Inflation implies that prices are rising. The reality is that currency value is falling. The distinction is not semantic. It is causal. If prices are rising, the blame can be directed at greedy merchants, supply chain disruptions, foreign adversaries, or corporate profiteering. If currency value is falling, the blame lands squarely on the institution responsible for managing the currency: the Federal Reserve.
 
 By framing the symptom (higher prices) rather than the cause (devalued currency), the narrative redirects attention away from the body of the Hydra and toward the heads—the corporations, the retailers, the foreign boogeyman du jour. The population argues about whether the grocer is gouging them on egg prices. Nobody asks why the dollar in their pocket buys half what it bought ten years ago. The mechanism is hidden behind the vocabulary.
-
 ---
 
 ## The Gold Standard Severance

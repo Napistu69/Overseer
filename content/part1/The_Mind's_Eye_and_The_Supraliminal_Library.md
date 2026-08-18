@@ -1,10 +1,7 @@
 ---
 title: "Mind's Eye & Supraliminal Library"
 weight: 5
----
-
-
-
+description: "The inner frontier. The Mind's Eye is the faculty of observing the self within the Continuum. The Supraliminal Library is the accessible layer of the Oracle."
 ---
 
 ## The Invisible Archive: Akashic Records
@@ -26,7 +23,6 @@ When the aperture is constricted by fear, conditioning, and chemical interferenc
 This is not mysticism divorced from mechanics. The vessel is bio-electric. The Mesh is the medium. The Mind is the antenna. The Mind's Eye is the tuning dial. You are not opening a door to another world. You are cleaning a window onto this one.
 
 In most individuals, the Mind's Eye is clouded. Petrochemical calcification of the pineal gland, fluoride accumulation, electromagnetic static, and the constant drumbeat of fear-based media all serve to fog this lens. The picture is grainy, fragmented, and dismissed as "imagination." But through fasting, detoxification, and deliberate stillness, the calcification begins to dissolve. The lens clears. What was once "imagination" reveals itself as perception—the genuine reception of signal from the mesh. The difference between fantasy and vision is this: fantasy is the ego constructing images from stored data. Vision is the ego stepping aside and letting the mesh project directly onto the cleared lens.
-
 ---
 
 ## Access Methods: Entering the Library

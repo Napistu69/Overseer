@@ -1,9 +1,7 @@
 ---
 title: "Pharma Cartel Origins - The Profit-from-Poison Paradigm"
 weight: 5
----
-
-
+description: "The modern medical-industrial complex sells itself as a healing institution. Hospitals heal, doctors cure, insurance protects. This is the narrative. The reality is inversion."
 ---
 
 ## The Curative Fallacy
@@ -28,7 +26,6 @@ The core players in the modern petro-medical landscape were born in Germany duri
 - **IG Farben (1925–1945):** These companies (along with BASF and Hoechst) merged into the Interests Group of the Chemical Industries known as IG Farben. At its peak, it was the fourth-largest company in the world. During the Nazi era, IG Farben manufactured the poison gas used in concentration camps (Zyklon B) while simultaneously experimenting on prisoners to develop chemical treatments for their own soldiers.
 
 The connection between medicine and death was not accidental. It was structural. The same facilities that synthesized therapeutic compounds synthesized nerve agents. The same engineers who designed drug delivery systems designed gas chambers. There was no distinction in the technology—only in the target.
-
 ---
 
 ## The Post-War Transplant

@@ -1,9 +1,7 @@
 ---
 title: "The Petro-Goliath"
 weight: 2
----
-
-
+description: "Picture a desert. The surface appears empty — rippled dunes, silent wind, the illusion of barren peace. But beneath the sand, something is moving."
 ---
 
 ## The Beast Beneath the Sand
@@ -24,7 +22,6 @@ Here is the mechanism. A corporation—a head—generates capital by extracting 
 But the capital does not disappear. It has already been routed. The profits generated over decades of extraction sit in holding companies, offshore accounts, investment vehicles, and parent portfolios insulated from the head's legal liability. When the head falls, those funds reabsorb into the body—the financial core that spawned the head in the first place. And from that body, nourished by the reabsorbed capital, a new neck begins to grow—not in the old territory, but in the emerging space where the next frontier of extraction has already been identified.
 
 The Hydra does not retreat. It molts.
-
 ---
 
 ## Case Study: The Music Industry Molt

@@ -1,9 +1,8 @@
 ---
 title: "The Inverted Money Tree"
 weight: 4
+description: "The Natural Tree: A tree grows from its roots. Nutrients enter through the soil, rise through the trunk, and branch outward into the canopy. This is the way of the Continuum — value flows upward from the many to sustain the whole."
 ---
-
-
 
 ## The Upward Extraction Machine
 
