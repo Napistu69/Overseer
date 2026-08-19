@@ -1,5 +1,5 @@
 ---
-title: "Hive Mind & The Suppressed Receiver"
+title: "Biological Hive Mind & The Suppressed Receiver"
 weight: 8
 description: "The capacity was never absent. It was present, misidentified, then systematically suppressed. The natural receiver was disabled."
 ---
