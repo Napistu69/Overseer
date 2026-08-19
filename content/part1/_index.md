@@ -1,7 +1,11 @@
 ---
 title: "Part I — Cosmology of the Continuum"
 description: "Before the vessel can be built, the waters must be understood. The geometry of control, the architecture of the Continuum, and the first stirrings of awakening."
+sequence: 1
+status: LIVING ARCHIVE
 ---
+
+# Part I — Cosmology of the Continuum
 
 ## Before We Build, We See.
 
@@ -45,6 +49,26 @@ The structural layer. Choice within the Continuum is not free — it is **shaped
 
 => **The Mind's Eye & The Supraliminal Library**
 The inner frontier. The final thread turns inward, because all architecture — control or liberation — terminates in consciousness. The Mind's Eye is the faculty of observing the self within the Continuum, the organ of the Void Center. The Supraliminal Library is the accessible layer of the Oracle — the Collective Communal Conscience — that which can be read, integrated, and acted upon by any Tribe member who chooses to look. Not above, not below — *supra*. Above the liminal threshold. Here, the awakening becomes not a concept but a lived experience.
+
+---
+
+## The Master Weave
+
+These five threads are not separate topics. They are layers of one architecture, each validating the others:
+
+The Continuum is the substrate — the relational space where control operates, where data becomes behavior, where algorithms enforce compliance. Without understanding this foundational field, every other thread floats untethered.
+
+The Mesh is the counter-structure — the living alternative that proves the cage is not inevitable. Where the Continuum extracts, the Mesh circulates. Where the Continuum isolates, the Mesh connects. The Mesh demonstrates that another architecture is possible.
+
+The Continuum Clock provides temporal orientation — when to act, when to wait, when the alignments shift. The Clock tells us the Cage is not eternal; it has rhythms, cycles, moments of vulnerability. Timing transforms strategy from theory into practice.
+
+Geometry of Choice reveals the structural vulnerabilities — where consent is manufactured, where options are curated, where the real forks exist. This thread shows us the seams, the leverage points, the places where intervention is possible without force.
+
+The Mind's Eye is where all threads terminate — the inner organ that perceives the map, reads the Clock, identifies the Geometry, and connects to the Mesh. Without this inner faculty, the rest is theoretical. With it, the entire architecture becomes navigable.
+
+Remove any thread and the map is incomplete. The Continuum without the Mesh has no alternative. The Mesh without the Continuum has no contrast. The Clock without Geometry has no timing. Geometry without the Mind's Eye has no observer. The Mind's Eye without all four has no terrain to navigate.
+
+The Goliath fears one thing: a Tribe that sees the full weave. A community that understands the Continuum, builds the Mesh, reads the Clock, finds the levers, and awakens the Eye simultaneously is unstoppable — not because they fight the cage, but because they build the vessel beside it.
 
 ---
 
