@@ -146,20 +146,23 @@
       box-shadow: 0 12px 35px rgba(0,0,0,0.12);
     }
     .card:hover::before { opacity: 1; }
-    .card h2 {
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card-link:hover .card {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+    .card-link:hover .card::before { opacity: 1; }
+    .card-link h2 {
       font-family: 'Jokerman', 'Playfair Display', serif;
       font-size: 1.6rem;
       margin-bottom: 12px;
       color: var(--primary);
     }
-    .card h2 a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-    .card h2 a:hover {
-      color: var(--secondary);
-    }
-    .card p {
+    .card-link p {
       color: var(--text-light);
       font-size: 1rem;
       line-height: 1.6;
@@ -217,10 +220,12 @@
       
       <div class="home-grid">
         {{- range first 6 .Site.RegularPages }}
-          <article class="card">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <p>{{ .Description | default .Summary | plainify | truncate 150 }}</p>
-          </article>
+          <a href="{{ .Permalink }}" class="card-link">
+            <article class="card">
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Description | default .Summary | plainify | truncate 150 }}</p>
+            </article>
+          </a>
         {{- end }}
       </div>
 
