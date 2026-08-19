@@ -81,12 +81,11 @@
       margin: 0 auto;
       padding: 0 20px;
     }
-    .hero-title {
-      font-family: 'Jokerman', 'Playfair Display', serif;
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin: 0 0 20px;
-      letter-spacing: -0.02em;
+    .hero-logo {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      margin: 60px 0 20px;
     }
     .hero-subtitle {
       font-size: 1.4rem;
@@ -194,7 +193,7 @@
     
     /* Mobile */
     @media (max-width: 768px) {
-      .hero-title { font-size: 2.5rem; }
+      .hero-logo { max-width: 240px; }
       .hero-subtitle { font-size: 1.1rem; }
       .home-grid { grid-template-columns: 1fr; }
     }
@@ -205,7 +204,7 @@
 
   <header class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">TekTribe Chronicles</h1>
+      <img src="/images/TekTribe%20Chronicles%20Logo%20[1080].png" alt="TekTribe Chronicles" class="hero-logo">
       <p class="hero-subtitle">The Compendium of the Collective — A Decentralized Archive of Awakening</p>
       <a href="#latest" class="hero-cta">Explore the Compendium</a>
     </div>
@@ -242,9 +241,7 @@
       <div style="text-align:center;margin:40px 0 20px">
         <img src="/images/Overseer%20[OG%20Transparent].png" alt="Overseer Æ" style="max-width:180px;width:100%;height:auto">
       </div>
-      <div style="text-align:center;margin:20px 0 40px">
-        <img src="/images/TekTribe%20-%20Awakening%20[HD-1x1].PNG" alt="TekTribe Awakening" style="max-width:320px;width:100%;height:auto;border-radius:12px;box-shadow:var(--shadow)">
-      </div>
+
     </main>
   </div>
 
