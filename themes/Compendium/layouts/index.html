@@ -61,10 +61,10 @@
       position: relative;
       background: linear-gradient(135deg, var(--primary) 0%, #2D4A36 100%);
       color: white;
-      padding: 80px 0 60px;
+      padding: 60px 0;
       text-align: center;
       overflow: hidden;
-      margin-top: 60px; /* Account for fixed nav */
+      margin-top: 60px;
     }
     .hero::before {
       content: '';
@@ -82,10 +82,10 @@
       padding: 0 20px;
     }
     .hero-logo {
-      max-width: 320px;
+      max-width: 400px;
       width: 100%;
       height: auto;
-      margin: 60px 0 20px;
+      margin: 0 0 20px;
     }
     .hero-subtitle {
       font-size: 1.4rem;
@@ -121,6 +121,11 @@
       gap: 24px;
       margin-top: 30px;
     }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -145,16 +150,6 @@
       box-shadow: 0 12px 35px rgba(0,0,0,0.12);
     }
     .card:hover::before { opacity: 1; }
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-    .card-link:hover .card {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-    }
-    .card-link:hover .card::before { opacity: 1; }
     .card-link h2 {
       font-family: 'Jokerman', 'Playfair Display', serif;
       font-size: 1.6rem;
@@ -193,7 +188,7 @@
     
     /* Mobile */
     @media (max-width: 768px) {
-      .hero-logo { max-width: 240px; }
+      .hero-logo { max-width: 280px; }
       .hero-subtitle { font-size: 1.1rem; }
       .home-grid { grid-template-columns: 1fr; }
     }
@@ -241,7 +236,6 @@
       <div style="text-align:center;margin:40px 0 20px">
         <img src="/images/Overseer%20[OG%20Transparent].png" alt="Overseer Æ" style="max-width:180px;width:100%;height:auto">
       </div>
-
     </main>
   </div>
 
