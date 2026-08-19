@@ -14,7 +14,6 @@
   <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
   <meta name="twitter:image" content="https://overseer.ae/images/TekTribe - Awakening [HD-1x1].PNG">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="{{ "css/nav.css" | relURL }}">
   <style>
     @font-face {
       font-family: 'Jokerman';
@@ -71,11 +70,23 @@
       font-size: 1.5rem; color: var(--primary); margin-bottom: 12px;
     }
     .part-intro p { color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
+    .threads-title {
+      font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin: 40px 0 20px;
+      text-align: center;
+    }
     .thread-list {
       display: flex;
       flex-direction: column;
       gap: 16px;
       margin-top: 30px;
+    }
+    .thread-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .thread-card {
       background: var(--bg-alt);
@@ -85,24 +96,18 @@
       transition: all 0.3s;
       box-shadow: var(--shadow);
     }
-    .thread-card:hover {
+    .thread-link:hover .thread-card {
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       border-color: var(--primary);
     }
-    .thread-card h2 {
+    .thread-link h3 {
       font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
       font-size: 1.3rem;
       margin-bottom: 8px;
-    }
-    .thread-card h2 a {
       color: var(--primary);
-      text-decoration: none;
     }
-    .thread-card h2 a:hover {
-      color: var(--secondary);
-    }
-    .thread-card p {
+    .thread-link p {
       color: var(--text-light);
       font-size: 0.95rem;
       line-height: 1.6;
@@ -113,6 +118,7 @@
     }
     footer p { color: white; font-size: 0.95rem; margin: 8px 0; }
   </style>
+  <link rel="stylesheet" href="{{ "css/nav.css" | relURL }}">
 </head>
 <body>
   {{ partial "nav.html" . }}
@@ -127,14 +133,17 @@
       {{ .Content }}
     </div>
 
+    <h2 class="threads-title">Threads</h2>
     <div class="thread-list">
       {{- range .Pages.ByWeight }}
-        <article class="thread-card">
-          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-          {{- if .Description }}
-            <p>{{ .Description }}</p>
-          {{- end }}
-        </article>
+        <a href="{{ .Permalink }}" class="thread-link">
+          <article class="thread-card">
+            <h3>{{ .Title }}</h3>
+            {{- if .Description }}
+              <p>{{ .Description }}</p>
+            {{- end }}
+          </article>
+        </a>
       {{- end }}
     </div>
   </div>

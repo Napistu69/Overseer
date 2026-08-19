@@ -64,17 +64,30 @@
     .page-header .subtitle { color: var(--text-light); font-size: 1.1rem; margin-bottom: 32px; }
     .content {
       background: var(--bg-alt); border: 1px solid var(--border);
-      border-radius: 12px; padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow);
+      border-radius: 12px; padding: 32px; margin-bottom: 40px; box-shadow: var(--shadow);
     }
     .content h2 {
       font-family: 'Jokerman', 'Georgia', 'Merriweather', serif;
-      font-size: 1.5rem; color: var(--primary); margin-bottom: 12px;
+      font-size: 1.5rem; color: var(--primary); margin: 32px 0 16px;
     }
+    .content h2:first-child { margin-top: 0; }
     .content h3 {
       font-family: 'Georgia', 'Merriweather', serif;
-      font-size: 1.2rem; color: var(--primary); margin: 20px 0 10px;
+      font-size: 1.2rem; color: var(--primary); margin: 24px 0 12px;
     }
-    .content p { color: var(--text-light); line-height: 1.7; margin-bottom: 12px; }
+    .content p { color: var(--text-light); line-height: 1.8; margin-bottom: 16px; }
+    .content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .content ul, .content ol { margin: 16px 0; padding-left: 24px; }
+    .content li { color: var(--text-light); margin-bottom: 8px; }
+    .content blockquote {
+      border-left: 4px solid var(--primary);
+      padding-left: 20px; margin: 24px 0;
+      color: var(--text-light); font-style: italic;
+    }
     footer {
       background: var(--bg-alt); border-top: 1px solid var(--border);
       padding: 40px 0; margin-top: 80px; text-align: center;
