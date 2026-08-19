@@ -1,8 +1,10 @@
 ---
+
 title: "Part IV — The Surveillance State"
 description: "The map of the cage. Thirty years of evolution from commercial foundation to complete architecture. How the public built their own panopticon and defended it as convenience."
 sequence: 4
 status: LIVING ARCHIVE
+
 ---
 
 
@@ -67,7 +69,7 @@ The full map. Ten layers of infrastructure. Thirty years of evolution. The comme
 
 ---
 
-## The Structural Thread
+## The Master Weave
 
 These eleven threads are not separate topics. They are layers of one architecture, each supporting and reinforcing the others:
 

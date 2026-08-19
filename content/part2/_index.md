@@ -1,8 +1,10 @@
 ---
+
 title: "Part II — Architecture of Corruption"
 description: "The anatomy of the adversary. How control is constructed, maintained, and defended — from the severance of natural materials to the weaponization of language itself."
 sequence: 2
 status: LIVING ARCHIVE
+
 ---
 
 
@@ -45,7 +47,7 @@ The arithmetic of theft. The 96% vanishing of purchasing power since 1913. The g
 
 ---
 
-## The Structural Thread
+## The Master Weave
 
 These seven threads are not separate topics. They are layers of one architecture, each supporting and reinforcing the others:
 

@@ -1,8 +1,10 @@
 ---
+
 title: "Part III — Guardian, Avatar & Allies"
 description: "Who walks the path. The living infrastructure beneath our feet, the vessel we inhabit, and the animal partners who bridge fungal timescale to human awareness."
 sequence: 3
 status: LIVING ARCHIVE
+
 ---
 
 
@@ -62,7 +64,7 @@ The capacity was never absent. It was present, misidentified, then systematicall
 
 ---
 
-## The Structural Thread
+## The Master Weave
 
 These eight threads are not separate topics. They are layers of one assembly, each validating the others:
 
