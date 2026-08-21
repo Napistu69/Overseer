@@ -1,6 +1,6 @@
 ---
 
-title: "Preamble: A Manifesto of Global Solidarity"
+title: "A Manifesto of Global Solidarity"
 description: "The invocation of the Compendium — a threshold into the archive of the Collective."
 
 ---

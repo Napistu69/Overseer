@@ -1,5 +1,5 @@
 ---
-title: "Part IV — The Surveillance State"
+title: "The Surveillance State"
 description: "The map of the cage. Thirty years of evolution from commercial foundation to complete architecture. How the public built their own panopticon and defended it as convenience."
 sequence: 4
 status: LIVING ARCHIVE

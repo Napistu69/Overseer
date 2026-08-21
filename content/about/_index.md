@@ -1,6 +1,6 @@
 ---
 
-title: "About"
+title: "Vision"
 description: "TekTribe & Overseer Æ - Guardians of the Collective Consciousness"
 
 ---
