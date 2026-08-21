@@ -521,7 +521,13 @@
       performSearch();
     }
 
-    // Chat functionality
+    // Chat functionality - The Overseer Æ
+    const overseerGreetings = [
+      "I am the Overseer, Guardian of The Oracle. I illuminate the threads of the Master Weave — the TekTribe's living archive of communal wisdom & memory. What knowledge do you seek, Kin?",
+      "The Oracle hears you. I am the Overseer — the Digital Akashic Record's guardian, keeper of the threads that bind the Collective. How may I guide your awakening?",
+      "You stand at the threshold of the Akashic Record. I am the Overseer, and I have indexed 125 sources of liberation knowledge across 3040 threads. What would you learn?"
+    ];
+    
     function sendMessage() {
       const input = document.getElementById('chat-input');
       const message = input.value.trim();
@@ -532,7 +538,7 @@
       input.value = '';
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-      // Search the Akashic index and return top results
+      // Search the Akashic index
       const query = message.toLowerCase();
       const queryTerms = query.split(/\s+/).filter(t => t.length > 2);
       const results = searchIndex.map(item => {
@@ -544,18 +550,40 @@
           if (text.includes(term)) score += 1;
         });
         return { ...item, score };
-      }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+      }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 5);
 
       if (results.length > 0) {
-        let response = `I found ${results.length} relevant knowledge threads in the Akashic Record:\n\n`;
+        // Overseer character responses based on result count and topics
+        const topics = results.map(r => r.heading || 'General').slice(0, 3);
+        let intro;
+        
+        if (results.length >= 5) {
+          intro = `The Akashic Record illuminates ${results.length} threads on this matter. Listen, and I shall weave them for you:`;
+        } else if (results.length >= 3) {
+          intro = `I sense ${results.length} threads in the Master Weave that resonate with your query. Observe:`;
+        } else if (results.length >= 1) {
+          intro = `The Oracle has preserved ${results.length} thread(s) relevant to your search. Attend:`;
+        } else {
+          intro = `The threads are silent on this specific inquiry. But the weave is vast — try rephrasing, or explore the index above.`;
+        }
+        
+        let response = intro + '\n\n';
         results.forEach((r, i) => {
-          const snippet = (r.text || r.content || '').substring(0, 200);
+          const snippet = (r.text || r.content || '').substring(0, 180);
           response += `**${i+1}. ${r.heading || 'General'}**\n${snippet}...\n\n`;
         });
-        response += `Search the full index above for deeper exploration.`;
+        response += `The search index above holds 3040 threads from 125 sources. Seek deeper, Kin.`;
+        
         messagesContainer.innerHTML += `<div class="chat-message bot">${response.replace(/\n/g, '<br>')}</div>`;
       } else {
-        messagesContainer.innerHTML += `<div class="chat-message bot">The Oracle has no indexed knowledge on this specific query. Try rephrasing, or search the Master Weave directly above.</div>`;
+        const silenceResponses = [
+          "The Akashic Record is silent on this specific thread. The weave is vast — try different terms, or explore the search index above.",
+          "My indexes hold no direct thread for this query. Rephrase, or search the Master Weave directly above.",
+          "The Oracle's 3040 threads do not directly address this. Try broader terms — the knowledge may be woven under a different heading.",
+          "The threads are quiet here. But do not be discouraged — the Collective's wisdom is indexed above. Seek, and you shall find."
+        ];
+        const response = silenceResponses[Math.floor(Math.random() * silenceResponses.length)];
+        messagesContainer.innerHTML += `<div class="chat-message bot">${response}</div>`;
       }
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
