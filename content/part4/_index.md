@@ -32,7 +32,7 @@ And the GOLIATH hydra controls the levers.
 
 ## What This Part Contains
 
-Eleven threads, each revealing a layer of the architecture, descending from the commercial foundation to the complete synthesis and transition toward Part V:
+Twelve threads, each revealing a layer of the architecture, descending from the commercial foundation to the complete synthesis and transition toward Part V:
 
 => **The Cookie at the Turn of Century**
 The Trojan horse. In 1994, Lou Montulli invented the web cookie for shopping cart persistence. By 1997-2000, DoubleClick pioneered third-party tracking across unrelated publisher sites. The technology for mass surveillance existed in the commercial sector before the legal framework authorized governmental expansion. The cookie was the first brick in the panopticon wall. By the time the public noticed the structure rising, the mortar was already set. The foundation was poured before 9/11. The framework was erected before the PATRIOT Act. The surveillance infrastructure was commercial before it was governmental.
@@ -51,6 +51,9 @@ The 20-year training cycle. January 9, 2007—Steve Jobs announces the iPhone. N
 
 => **Data Collection Vectors**
 The infrastructure hiding inside the infrastructure. By 2012, Flurry Analytics alone was embedded in approximately one million applications, collecting data from two billion smartphones worldwide. The surveillance was not happening at the app level. It was happening at the SDK level, invisible to both users and regulators. Address book uploads exposed hundreds of contacts per user. Viral data collection meant even non-users were being profiled. The behavioral data flowing through millions of apps created the richest training corpus imaginable for machine learning systems. Every tap, every scroll, every hesitation, every notification response, every location visit, every app switch was being recorded and stored. Not for the user's benefit. For the benefit of systems being built to understand, predict and shape human behavior.
+
+=> **Algorithmic Manipulation Era**
+When the infrastructure turns inward. Facebook's emotional contagion experiment on 689,000 users. Cambridge Analytica's psychographic targeting of 87 million profiles. The Internet Research Agency's discord campaign reaching 126 million Americans. The petro-algorithmic simulation layer.
 
 => **Snowden's Revelation — The Huxleyan Absorption**
 The stress test that proved the system's strength. June 5-6, 2013—Verizon metadata orders revealed. PRISM program disclosed. Boundless Informant, XKeyscore, Upstream collection, Tempora—all published in reputable newspapers, corroborated by classified documents, confirmed by government officials. The public processed the information, experienced brief concern, and returned to their feeds. The smartphones stayed in their pockets. The apps stayed installed. The permissions stayed granted. Awareness alone proved insufficient. The Huxleyan system absorbs awareness. It commodifies dissent. What is required is not information but architecture. Not criticism but construction. Not awareness but alternatives.
@@ -71,9 +74,9 @@ The full map. Ten layers of infrastructure. Thirty years of evolution. The comme
 
 ## The Master Weave
 
-These eleven threads are not separate topics. They are layers of one architecture, each supporting and reinforcing the others:
+These twelve threads are not separate topics. They are layers of one architecture, each supporting and reinforcing the others:
 
-The Cookie created the foundation. 9/11 provided the legal unlock. LifeLog to Facebook marked the government-to-commercial transition. Check-ins enabled location fusion. The Smartphone initiated the 20-year training cycle. Data Collection Vectors hid surveillance inside apps. Snowden's Revelation tested the Huxleyan absorption—and proved it held. Recommendation Engines shifted from collecting to shaping. Plan-demic activated the entire infrastructure. Meta Web completed the aggregation through third-party integrations. And the Complete Architecture shows how all eleven layers interlock into a single multi-dimensional surveillance apparatus.
+The Cookie created the foundation. 9/11 provided the legal unlock. LifeLog to Facebook marked the government-to-commercial transition. Check-ins enabled location fusion. The Smartphone initiated the 20-year training cycle. Data Collection Vectors hid surveillance inside apps. Snowden's Revelation tested the Huxleyan absorption—and proved it held. Recommendation Engines shifted from collecting to shaping. Algorithmic Manipulation Era revealed the simulation layer. Plan-demic activated the entire infrastructure. Meta Web completed the aggregation through third-party integrations. And the Complete Architecture shows how all twelve layers interlock into a single multi-dimensional surveillance apparatus.
 
 Remove any single layer and the others compensate. The Hydra molts. The capital reroutes. A new head grows. But name all eleven layers simultaneously—show the Tribe how they interlock—and the architecture becomes visible. And what is visible can be dismantled.
 
