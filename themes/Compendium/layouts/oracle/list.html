@@ -472,7 +472,7 @@
     // Load search index
     async function loadSearchIndex() {
       try {
-        const response = await fetch('/index.json');
+        const response = await fetch('/akashic-index.json');
         const data = await response.json();
         searchIndex = data.chunks || [];
         searchMeta = data.meta || {};
