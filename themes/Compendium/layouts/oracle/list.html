@@ -122,6 +122,15 @@
       background: rgba(0, 255, 255, 0.2); color: var(--text);
       padding: 2px 4px; border-radius: 3px;
     }
+    .result-expand {
+      background: none; border: 1px solid var(--border);
+      color: var(--primary); padding: 6px 14px;
+      border-radius: 6px; cursor: pointer; font-size: 0.85rem;
+      margin-top: 10px; transition: all 0.2s;
+    }
+    .result-expand:hover {
+      background: var(--primary); color: white;
+    }
     .oracle-empty {
       text-align: center; padding: 60px 20px; color: var(--text-muted);
     }
@@ -465,22 +474,44 @@
         return;
       }
 
-      resultsContainer.innerHTML = results.map(item => {
+      resultsContainer.innerHTML = results.map((item, idx) => {
         const text = item.text || item.content || '';
-        const snippet = text.substring(0, 250);
         const heading = item.heading || 'General';
         const source = item.source || 'Unknown';
         // Truncate source path for display
-        const sourceDisplay = source.length > 40 ? '...' + source.slice(-37) : source;
+        const sourceDisplay = source.length > 50 ? '...' + source.slice(-47) : source;
+        
+        // Show more context: 600 chars around match
+        const matchIdx = text.toLowerCase().indexOf(query);
+        const start = Math.max(0, matchIdx - 200);
+        const end = Math.min(text.length, matchIdx + 400);
+        const snippet = text.substring(start, end);
+        const hasMore = text.length > 600;
         
         return `
-          <div class="result-card">
+          <div class="result-card" id="result-${idx}">
             <div class="result-title">${heading}</div>
             <div class="result-meta">${sourceDisplay}</div>
-            <div class="result-snippet">${snippet}...</div>
+            <div class="result-snippet">
+              ${start > 0 ? '...' : ''}${snippet}${end < text.length ? '...' : ''}
+            </div>
+            ${hasMore ? `<button class="result-expand" onclick="expandResult(${idx})">Show Full Context</button>` : ''}
+            <div class="result-full" id="full-${idx}" style="display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);color:var(--text-light);line-height:1.7;white-space:pre-wrap;">${text}</div>
           </div>
         `;
       }).join('');
+    }
+
+    function expandResult(idx) {
+      const full = document.getElementById('full-' + idx);
+      const btn = document.querySelector('#result-' + idx + ' .result-expand');
+      if (full.style.display === 'none') {
+        full.style.display = 'block';
+        btn.textContent = 'Hide Full Context';
+      } else {
+        full.style.display = 'none';
+        btn.textContent = 'Show Full Context';
+      }
     }
 
     function setFilter(filter, btn) {
@@ -501,8 +532,31 @@
       input.value = '';
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-      // Simulate bot response
-      messagesContainer.innerHTML += `<div class="chat-message bot">The Oracle is indexing your query. For a full AI-powered experience, connect to the Overseer Æ API.</div>`;
+      // Search the Akashic index and return top results
+      const query = message.toLowerCase();
+      const queryTerms = query.split(/\s+/).filter(t => t.length > 2);
+      const results = searchIndex.map(item => {
+        let score = 0;
+        const text = (item.text || item.content || '').toLowerCase();
+        const heading = (item.heading || '').toLowerCase();
+        queryTerms.forEach(term => {
+          if (heading.includes(term)) score += 20;
+          if (text.includes(term)) score += 1;
+        });
+        return { ...item, score };
+      }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+
+      if (results.length > 0) {
+        let response = `I found ${results.length} relevant knowledge threads in the Akashic Record:\n\n`;
+        results.forEach((r, i) => {
+          const snippet = (r.text || r.content || '').substring(0, 200);
+          response += `**${i+1}. ${r.heading || 'General'}**\n${snippet}...\n\n`;
+        });
+        response += `Search the full index above for deeper exploration.`;
+        messagesContainer.innerHTML += `<div class="chat-message bot">${response.replace(/\n/g, '<br>')}</div>`;
+      } else {
+        messagesContainer.innerHTML += `<div class="chat-message bot">The Oracle has no indexed knowledge on this specific query. Try rephrasing, or search the Master Weave directly above.</div>`;
+      }
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
 
