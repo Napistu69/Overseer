@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'TekTribe Chronicles'
 theme = 'Compendium'
 
+[taxonomies]
+tag = ""
+category = ""
+
 [outputs]
   home = ["HTML", "JSON"]
 
