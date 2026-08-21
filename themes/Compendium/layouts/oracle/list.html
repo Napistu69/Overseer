@@ -293,10 +293,7 @@
     </div>
 
     <div class="oracle-filters">
-      <button class="filter-btn active" data-filter="all" onclick="setFilter('all', this)">All</button>
-      <button class="filter-btn" data-filter="thread" onclick="setFilter('thread', this)">Threads</button>
-      <button class="filter-btn" data-filter="part" onclick="setFilter('part', this)">Parts</button>
-      <button class="filter-btn" data-filter="page" onclick="setFilter('page', this)">Pages</button>
+      <button class="filter-btn active" onclick="document.getElementById('oracle-search').focus()">Search the Akashic Record</button>
     </div>
 
     <div class="oracle-stats" id="oracle-stats"></div>
@@ -413,19 +410,19 @@
 
     // Search index will be populated by Hugo JSON
     let searchIndex = [];
+    let searchMeta = {};
     let currentFilter = 'all';
 
     // Load search index
     async function loadSearchIndex() {
       try {
         const response = await fetch('/index.json');
-        searchIndex = await response.json();
-        // Decode HTML entities in content
-        searchIndex = searchIndex.map(item => ({
-          ...item,
-          content: item.content.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-        }));
-        document.getElementById('oracle-stats').textContent = searchIndex.length + ' knowledge chunks indexed';
+        const data = await response.json();
+        searchIndex = data.chunks || [];
+        searchMeta = data.meta || {};
+        document.getElementById('oracle-stats').textContent = 
+          (searchMeta.total_chunks || searchIndex.length) + ' knowledge chunks indexed from ' + 
+          (searchMeta.total_files || 0) + ' sources';
         performSearch();
       } catch (e) {
         console.error('Failed to load search index:', e);
@@ -439,27 +436,27 @@
 
       if (!query) {
         resultsContainer.innerHTML = '';
-        document.getElementById('oracle-stats').textContent = searchIndex.length + ' knowledge chunks indexed';
+        document.getElementById('oracle-stats').textContent = 
+          (searchMeta.total_chunks || searchIndex.length) + ' knowledge chunks indexed from ' + 
+          (searchMeta.total_files || 0) + ' sources';
         return;
       }
 
       const queryTerms = query.split(/\s+/).filter(t => t.length > 2);
       let results = searchIndex.map(item => {
         let score = 0;
-        const titleLower = item.title.toLowerCase();
-        const contentLower = item.content.toLowerCase();
+        const textLower = (item.text || item.content || '').toLowerCase();
+        const headingLower = (item.heading || '').toLowerCase();
 
         queryTerms.forEach(term => {
-          if (titleLower.includes(term)) score += 10;
-          if (contentLower.includes(term)) score += 1;
+          if (headingLower.includes(term)) score += 20;
+          if (textLower.includes(term)) score += 1;
+          // Bonus for exact phrase match
+          if (textLower.includes(query)) score += 5;
         });
 
         return { ...item, score };
-      }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 20);
-
-      if (currentFilter !== 'all') {
-        results = results.filter(item => item.type === currentFilter);
-      }
+      }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 30);
 
       document.getElementById('oracle-stats').textContent = results.length + ' results found';
 
@@ -469,11 +466,17 @@
       }
 
       resultsContainer.innerHTML = results.map(item => {
-        const snippet = item.content.substring(0, 200);
+        const text = item.text || item.content || '';
+        const snippet = text.substring(0, 250);
+        const heading = item.heading || 'General';
+        const source = item.source || 'Unknown';
+        // Truncate source path for display
+        const sourceDisplay = source.length > 40 ? '...' + source.slice(-37) : source;
+        
         return `
-          <div class="result-card" onclick="window.location.href='${item.url}'">
-            <div class="result-title">${item.title}</div>
-            <div class="result-meta">${item.type} • ${item.part || 'General'}</div>
+          <div class="result-card">
+            <div class="result-title">${heading}</div>
+            <div class="result-meta">${sourceDisplay}</div>
             <div class="result-snippet">${snippet}...</div>
           </div>
         `;
