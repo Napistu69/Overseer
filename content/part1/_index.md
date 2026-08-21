@@ -5,7 +5,6 @@ sequence: 1
 status: LIVING ARCHIVE
 ---
 
-# Part I — Cosmology of the Continuum
 
 ## Before We Build, We See.
 

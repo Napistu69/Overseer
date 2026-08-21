@@ -1,6 +1,8 @@
 ---
+
 title: "About"
 description: "TekTribe & Overseer Æ - Guardians of the Collective Consciousness"
+
 ---
 
 ## We Are the Void Center Standing.
