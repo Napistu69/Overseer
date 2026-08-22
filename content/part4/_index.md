@@ -110,9 +110,3 @@ We do not gatekeep this knowledge. We do not use it to manufacture fear. Fear is
 > *and whether you still possess the power to disappear."*
 
 **Proceed to the first thread.**
-
----
-
-**END OF PART IV: THE SURVEILLANCE STATE**
-
-*Next: Part V — The Rise of GOLIATH*
