@@ -57,12 +57,12 @@
   z-index: 1000;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 #main-nav .nav-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2px;
   padding: 0;
   max-width: 900px;
@@ -72,12 +72,18 @@
 #main-nav a {
   color: var(--text);
   text-decoration: none;
-  padding: 16px 20px;
+  padding: 16px 12px;
   display: block;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: background 0.2s;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
   border-bottom: 3px solid transparent;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #main-nav a:hover,
