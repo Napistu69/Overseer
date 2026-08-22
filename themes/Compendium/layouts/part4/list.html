@@ -94,12 +94,17 @@
       display: block;
     }
     .thread-card {
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
+      background: #FFFFFF;
+      border: 1px solid #E8E8E8;
       border-radius: 12px;
       padding: 20px 24px;
       transition: all 0.3s;
       box-shadow: var(--shadow);
+    }
+    [data-theme="dark"] .thread-card {
+      background: #3A3A3A;
+      border-color: #505050;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     }
     .thread-link:hover .thread-card {
       transform: translateY(-2px);
